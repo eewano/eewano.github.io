@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+header {
+    width: 860px;
+    height: 120px;
+    margin: 0 auto;
+}
+
+/* ▼ロゴエリア▼ */
+.header-logo {
+    float: left;
+    width: 30%;
+    height: 120px;
+}
+
+.header-logo h1 {
+    color: #ff0000;
+    margin-top: 50px;
+}
+/* ▲ロゴエリア▲ */
+
+/* ▼メニューエリア▼ */
+.header-nav {
+    float: left;
+    width: 40%;
+    height: 120px;
+}
+
+.menu ul {
+    margin-top: 50px;
+    padding: 0;
+    list-style: none;
+}
+
+.menu li {
+    float: left;
+    width: auto;
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 10px;
+    font-size: 13px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.menu li a:hover {
+    background-color: #fe3061;
+    color: #ffffff;
+}
+
+.menu ul:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/* ▲メニューエリア▲ */
+
+/* ▼TW・FBエリア▼ */
+.header-follow {
+    float: left;
+    width: 30%;
+    height: 120px;
+}
+
+.header-follow-logo {
+    margin-top: 25px;
+}
+
+.header-follow img {
+    vertical-align: middle;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+/* ▲TW・FBエリア▲ */
+
+header:after {
+    content: "";
+    display: block;
+    clear: both;
+}
