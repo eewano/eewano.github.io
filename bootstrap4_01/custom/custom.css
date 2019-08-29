@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+body {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #444444;
+}
+
+.container {
+    max-width: 1366px;
+}
+
+/* ▼独自設定▼ */
+.upper-background-area {
+    background-color: #f8f8f8;
+}
+
+.original-text-color {
+    color: #344768;
+}
+
+.original-bg-color01 {
+    background-color: #dedede;
+}
+
+.original-bg-color02 {
+    background-color: #344768;
+}
+
+.fas {
+    padding-right: 10px;
+}
+/* ▲独自設定▲ */
+
+/* ▼トップ画像エリア▼ */
+.top-img-area {
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+    position: relative;
+}
+
+.inside-img {
+    position: absolute;
+}
+/* ▲トップ画像エリア▲ */
+
+/* ▼コンテンツ01▼ */
+.content-01-area img {
+    width: 100%;
+}
+/* ▲コンテンツ01▲ */
+
+.original-hr {
+    border-color: #344768;
+    border-width: 8px;
+}
+
+/* ▼申し込み▼ */
+.application-area img {
+    width: 100%;
+}
+
+.application-area button {
+    border-radius: 10px;
+}
+/* ▲申し込み▲ */
+
+/* ▼フッター▼ */
+footer {
+    background-color: #eaeaea;
+}
+/* ▲フッター▲ */
+
+.googlemap-like-box {
+    width: 600px;
+    height: 450px;
+    border: 0;
+}

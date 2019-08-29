@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+@media screen and (max-width: 544px) {
+    .content-01-area h2 {
+        font-size: 12px;
+    }
+
+    .content-02-area h2 {
+        font-size: 12px;
+    }
+
+    .header-list-area {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    ul.header-list-area li {
+        display: block;
+        text-align: center;
+        line-height: 0.5;
+    }
+
+    .header-logo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .address-list-area {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    ul.address-list-area li {
+        display: block;
+        line-height: 0.6;
+    }
+
+    /* ▼トップ画像▼ */
+    .top-img-area {
+        background-image: url(../img/pic01_03.jpg);
+        padding-bottom: 270px;
+        background-size: 640px 270px;
+    }
+
+    .inside-img h1 {
+        font-size: 20px;
+        margin-top: 32px;
+    }
+    
+    .circle-text {
+        background-color: rgba(255, 255, 255, 0.6);
+        width: 150px;
+        height: 150px;
+        border-radius: 75px;
+    }
+    
+    .circle-text p {
+        font-size: 16px;
+        line-height: 1.0;
+    }
+    
+    .circle-text span {
+        font-size: 40px;
+    }
+    /* ▲トップ画像▲ */
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .content-01-area h2 {
+        font-size: 20px;
+    }
+
+    .content-02-area h2 {
+        font-size: 20px;
+    }
+
+    /* ▼トップ画像▼ */
+    .top-img-area {
+        background-image: url(../img/pic01_02.jpg);
+        padding-bottom: 505px;
+        background-size: 1200px 505px;
+    }
+
+    .inside-img h1 {
+        font-size: 32px;
+    }
+    
+    .circle-text {
+        background-color: rgba(255, 255, 255, 0.6);
+        width: 280px;
+        height: 280px;
+        border-radius: 140px;
+    }
+    
+    .circle-text p {
+        font-size: 32px;
+        line-height: 1.0;
+    }
+    
+    .circle-text span {
+        font-size: 72px;
+    }
+    /* ▲トップ画像▲ */
+}
+
+@media screen and (min-width: 1200px) {
+    /* ▼トップ画像▼ */
+    .top-img-area {
+        background-image: url(../img/pic01_01.jpg);
+        padding-bottom: calc(100% * 716 / 1700);
+        background-size: cover;
+    }
+
+    .inside-img h1 {
+        font-size: 64px;
+    }
+    
+    .circle-text {
+        background-color: rgba(255, 255, 255, 0.6);
+        width: 440px;
+        height: 440px;
+        border-radius: 220px;
+    }
+    
+    .circle-text p {
+        font-size: 48px;
+        line-height: 1.0;
+    }
+    
+    .circle-text span {
+        font-size: 80px;
+    }
+    /* ▲トップ画像▲ */
+}
