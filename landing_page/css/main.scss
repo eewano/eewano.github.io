@@ -1,0 +1,519 @@
+@charset "utf-8";
+
+@import "./normalize.scss";
+
+// ▼コンテンツ01▼
+.content01 {
+    display: flex;
+    background-color: antiquewhite;
+
+    @include mq(sm) {
+        display: block;
+    }
+
+    @include mq(md) {
+        display: block;
+    }
+}
+
+.intro-text-area {
+    box-sizing: border-box;
+    width: 60%;
+    padding: 40px 80px;
+
+    p {
+        font-size: 16px;
+        line-height: 1.5em;
+    }
+
+    ul {
+        font-size: 18px;
+        line-height: 1.5em;
+        padding-left: 20px;
+
+        @include mq(sm) {
+            font-size: 16px;
+        }
+    }
+
+    @include mq(sm) {
+        width: 100%;
+        padding: 40px 20px 0 20px;
+    }
+
+    @include mq(md) {
+        width: 100%;
+    }
+}
+
+.bmi-area {
+    box-sizing: border-box;
+    width: 40%;
+    height: 500px;
+    padding: 40px 40px 20px 0;
+
+    @include mq(sm) {
+        width: 100%;
+        padding: 20px;
+    }
+
+    @include mq(md) {
+        width: 100%;
+        padding: 0 40px 40px 40px;
+        height: auto;
+    }
+}
+
+.bmi-area-inside {
+    background-color: burlywood;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 1em;
+
+    h2 {
+        text-align: center;
+    }
+
+    p {
+        line-height: 1.5em;
+        margin: 20px 40px;
+    }
+
+    ul {
+        line-height: 1.5em;
+        list-style-type: none;
+    }
+
+    li {
+        padding-top: 10px;
+    }
+
+    @include mq(md) {
+        text-align: center;
+    }
+}
+
+.bmi-button {
+    background-color: #eeeeee;
+    width: 160px;
+    height: 40px;
+    border-radius: 1em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+// ▲コンテンツ01▲
+
+// ▼コンテンツ02▼
+.explain-area01 {
+    padding: 40px 40px 0 40px;
+
+    @include mq(sm) {
+        padding: 20px 20px 0 20px;
+    }
+}
+
+.explain-box {
+    margin-top: 0;
+    margin-bottom: 20px;
+    background-color: #eeeeee;
+    display: flex;
+
+    @include mq(sm) {
+        display: block;
+    }
+
+    .explain-img {
+        float: left;
+        width: 30%;
+        box-sizing: border-box;
+    
+        img {
+            width: 100%;
+        }
+    
+        @include mq(sm) {
+            width: 100%;
+        }
+
+        @include mq(md) {
+            width: 40%;
+        }
+    }
+}
+
+.explain-box:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.explain-box-even {
+    margin-top: 0;
+    margin-bottom: 20px;
+    background-color: #eeeeee;
+
+    @include mq(sm) {
+        display: block;
+    }
+
+    .explain-img {
+        float: right;
+        width: 30%;
+        box-sizing: border-box;
+    
+        img {
+            width: 100%;
+        }
+    
+        @include mq(sm) {
+            width: 100%;
+        }
+
+        @include mq(md) {
+            width: 40%;
+        }
+    }
+}
+
+.explain-box-even:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.explain-text {
+    width: 70%;
+    box-sizing: border-box;
+
+    h2 {
+        color: #ffffff;
+        background-color: #ff0000;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        @include mq(sm) {
+            font-size: 18px;
+        }
+    }
+
+    p {
+        line-height: 1.5em;
+        padding-left: 80px;
+        padding-right: 80px;
+
+        @include mq(sm) {
+            padding: 0 20px 20px 20px;
+        }
+
+        @include mq(md) {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+
+    @include mq(sm) {
+        width: 100%;
+    }
+
+    @include mq(md) {
+        width: 60%;
+    }
+}
+
+.explain-area02 {
+    text-align: center;
+
+    p {
+        line-height: 1.5em;
+        margin: 40px 140px;
+
+        @include mq(sm) {
+            margin: 40px 20px;
+        }
+    }
+
+    button {
+        @include app-button;
+        margin-bottom: 40px;
+    }
+}
+// ▲コンテンツ02▲
+
+.central-img {
+    width: 100%;
+    height: auto;
+}
+
+// ▼コンテンツ03▼
+.content03 {
+    text-align: center;
+    background-color: #eeeeee;
+
+    h1 {
+        font-size: 48px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        margin-bottom: 0;
+
+        @include mq(sm) {
+            font-size: 28px;
+            padding-top: 40px;
+            padding-bottom: 20px;
+
+        }
+    }
+
+    h2 {
+        font-size: 32px;
+        margin-top: 60px;
+
+        @include mq(sm) {
+            font-size: 28px;
+        }
+    }
+
+    button {
+        @include app-button;
+        margin-bottom: 40px;
+    }
+}
+
+.service-box-area {
+    display: flex;
+
+    @include mq(sm) {
+        display: block;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+.price01 {
+    @include price-box(#b2ecb2);
+    box-sizing: border-box;
+    margin-left: 160px;
+    margin-right: 20px;
+
+    @include mq(sm) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    @include mq(md) {
+        margin-left: 20px;
+        margin-right: 10px;
+
+        h3 {
+            padding-top: 40px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+}
+
+.price02 {
+    @include price-box(#ffb7eb);
+    box-sizing: border-box;
+    margin-left: 20px;
+    margin-right: 160px;
+
+    @include mq(sm) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    @include mq(md) {
+        margin-left: 10px;
+        margin-right: 20px;
+
+        h3 {
+            padding-top: 40px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+}
+
+.guarantee-area p {
+    text-align: start;
+    line-height: 1.5em;
+    padding-left: 120px;
+    padding-right: 120px;
+
+    @include mq(sm) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    @include mq(md) {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
+.price-down {
+    font-size: 40px;
+    font-weight: bold;
+    color: #f600b1;
+    text-shadow: 2px 2px #444444;
+    letter-spacing: 0.1em;
+    margin: 60px auto;
+
+    @include mq(sm) {
+        font-size: 24px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 40px auto;
+    }
+
+    @include mq(md) {
+        font-size: 36px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+// ▲コンテンツ03▲
+
+// ▼コンテンツ04▼
+.content04 {
+    text-align: center;
+
+    h1 {
+        font-size: 48px;
+        margin-top: 60px;
+
+        @include mq(sm) {
+            font-size: 28px;
+            margin-top: 40px;
+        }
+    }
+
+    button {
+        @include app-button;
+        margin: 20px 0 40px 0;
+    }
+}
+
+.trainer-box-area {
+    display: flex;
+
+    @include mq(sm) {
+        display: block;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+.trainer-info {
+    margin-left: 80px;
+    margin-right: 80px;
+    background-color: #b2ecb2;
+    border-radius: 1em;
+    width: 50%;
+
+    img {
+        width: 100%;
+        max-width: 200px;
+        border-radius: 50%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        @include mq(sm) {
+            max-width: 140px;
+        }
+    }
+
+    p {
+        text-align: start;
+        padding-left: 40px;
+        padding-right: 40px;
+        line-height: 1.5em;
+    }
+
+    @include mq(sm) {
+        width: 100%;
+        margin: 20px 0;
+        padding-bottom: 20px;
+    }
+
+    @include mq(md) {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+.customer-box-area {
+    display: flex;
+
+    @include mq(sm) {
+        display: block;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    @include mq(md) {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.customer-box {
+    position: relative;
+    background-color: antiquewhite;
+    box-sizing: border-box;
+    width: 33.3333%;
+    height: 480px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 30px 20px;
+    border-radius: 1em;
+    margin-bottom: 20px;
+
+    p {
+        text-align: start;
+        line-height: 1.5em;
+    }
+
+    ul {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 20px;
+        margin: auto;
+        padding: 0;
+    }
+
+    @include mq(sm) {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        height: 380px;
+    }
+
+    @include mq(md) {
+        width: 42%;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+}
+
+.customer-info {
+    display: inline-block;
+    vertical-align: middle;
+    list-style-type: none;
+    bottom: 0;
+
+    img {
+        max-width: 100px;
+        border-radius: 50%;
+    }
+}
+// ▲コンテンツ04▲

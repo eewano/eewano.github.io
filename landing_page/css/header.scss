@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+@import "./normalize.scss";
+
+header {
+    background-color: #eeeeee;
+}
+
+.top-area {
+    background-color: #535353;
+
+    h1 {
+        color: #ffffff;
+        font-size: 48px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1.5;
+        margin-bottom: 0;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        @include mq(sm) {
+            font-size: 20px;
+        }
+
+        @include mq(md) {
+            font-size: 36px;
+        }
+    }
+}
+
+.top-img-area {
+    text-align: center;
+    
+    img {
+        max-width: 100%;
+    }
+
+    button {
+        @include app-button;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+}
+
+.top-intro {
+    h2 {
+        font-size: 48px;
+        font-weight: bold;
+        color: #f600b1;
+        text-shadow: 2px 2px #444444;
+        letter-spacing: 0.2em;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 40px;
+
+        @include mq(sm) {
+            font-size: 24px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        @include mq(md) {
+            font-size: 36px;
+        }
+    }
+
+    p {
+        font-size: 24px;
+        text-align: center;
+        padding-bottom: 40px;
+        margin-bottom: 0;
+
+        @include mq(sm) {
+            font-size: 14px;
+            padding-left: 20px;
+            padding-right: 20px;
+            line-height: 1.5em;
+        }
+
+        @include mq(md) {
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+    }
+}

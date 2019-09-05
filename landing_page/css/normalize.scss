@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+// ▼mixinエリア▼
+$breakpoints: (
+    'sm': 'screen and (max-width: 543px)',
+    'md': 'screen and (min-width: 768px) and (max-width: 991px)',
+    'lg': 'screen and (max-width: 1199px)',
+) !default;
+
+@mixin mq($breakpoint: md) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
+
+@mixin x-margin-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin app-button {
+    width: 400px;
+    height: 100px;
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: bold;
+    background-color: #4eb119;
+    border: 6px solid #3f7d0e;
+    border-radius: 1em;
+
+    &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+    }
+
+    @include mq(sm) {
+        width: 300px;
+        height: 80px;
+        font-size: 20px;
+    }
+}
+
+@mixin price-box($color) {
+    background-color: $color;
+    color: #ffffff;
+    width: 50%;
+    text-align: center;
+    border-radius: 2em;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+
+    h3 {
+        font-size: 32px;
+        font-weight: bold;
+        padding-top: 60px;
+
+        @include mq(sm) {
+            font-size: 24px;
+            padding-top: 20px;
+        }
+    }
+
+    p {
+        font-weight: bold;
+    }
+
+    @include mq(sm) {
+        width: 100%;
+    }
+}
+// ▲mixinエリア▲
+
+html {
+    font-family: sans-serif;
+}
+
+* {
+    color: #444444;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    @include x-margin-center;
+}
+
+p {
+    font-size: 18px;
+
+    @include mq(sm) {
+        font-size: 14px;
+    }
+}
+
+.pc-width {
+    width: 100%;
+    max-width: 1200px;
+    @include x-margin-center;
+}
