@@ -1,0 +1,214 @@
+* {
+  color: #444444;
+  margin-top: 0;
+  margin-left: 0; }
+
+h1, h2, h3, p, ul, li {
+  line-height: 1.5em; }
+
+.pc-width {
+  width: 100%;
+  max-width: 1200px; }
+
+.application {
+  font-size: 20px;
+  height: 80px;
+  background-color: #4eb119;
+  border: 6px solid #3f7d0e;
+  border-radius: 1em;
+  box-sizing: border-box; }
+  .application:hover {
+    cursor: pointer;
+    opacity: 0.8; }
+  @media screen and (max-width: 767px) {
+    .application {
+      margin-left: 15px;
+      margin-right: 15px; } }
+  @media screen and (min-width: 1200px) {
+    .application {
+      font-size: 32px;
+      height: 100px; } }
+
+header {
+  background-color: #eeeeee; }
+
+.content-header h1 {
+  font-size: 20px; }
+  @media screen and (min-width: 768px) {
+    .content-header h1 {
+      font-size: 32px; } }
+  @media screen and (min-width: 1200px) {
+    .content-header h1 {
+      font-size: 48px; } }
+.content-header p {
+  font-size: 14px; }
+  @media screen and (min-width: 1200px) {
+    .content-header p {
+      font-size: 24px; } }
+
+@media screen and (min-width: 1200px) {
+  .intro-text-area ul {
+    font-size: 18px; } }
+
+.campaign {
+  font-size: 36px;
+  color: #f600b1;
+  letter-spacing: 0.2em;
+  text-shadow: 2px 2px #444444; }
+  @media screen and (max-width: 767px) {
+    .campaign {
+      font-size: 24px;
+      margin-left: 15px;
+      margin-right: 15px; } }
+  @media screen and (min-width: 1200px) {
+    .campaign {
+      font-size: 48px; } }
+
+.content01 {
+  background-color: antiquewhite; }
+
+.intro-text-area ul {
+  padding-left: 0; }
+
+.bmi-area {
+  background-color: burlywood;
+  border-radius: 1em; }
+  .bmi-area h2 {
+    font-size: 24px; }
+  .bmi-area ul {
+    list-style-type: none; }
+    .bmi-area ul li {
+      margin-bottom: 4px; }
+
+.explain-box-area {
+  background-color: #eeeeee; }
+  .explain-box-area h2 {
+    font-size: 18px;
+    background-color: #ff0000; }
+    @media screen and (min-width: 1200px) {
+      .explain-box-area h2 {
+        font-size: 28px; } }
+  @media screen and (min-width: 1200px) {
+    .explain-box-area p {
+      font-size: 18px; } }
+
+.content03 {
+  background-color: #eeeeee; }
+  .content03 h1 {
+    font-size: 28px; }
+    @media screen and (min-width: 1200px) {
+      .content03 h1 {
+        font-size: 48px; } }
+  .content03 h2 {
+    font-size: 28px; }
+    @media screen and (min-width: 1200px) {
+      .content03 h2 {
+        font-size: 32px; } }
+
+.price01 {
+  background-color: #b2ecb2;
+  border-radius: 2em; }
+  .price01 h3 {
+    font-size: 24px; }
+    @media screen and (min-width: 1200px) {
+      .price01 h3 {
+        font-size: 32px; } }
+  .price01 p {
+    font-size: 16px; }
+    @media screen and (min-width: 1200px) {
+      .price01 p {
+        font-size: 18px;
+        font-weight: bold; } }
+
+.price02 {
+  background-color: #ffb7eb;
+  border-radius: 2em; }
+  .price02 h3 {
+    font-size: 24px; }
+    @media screen and (min-width: 1200px) {
+      .price02 h3 {
+        font-size: 32px; } }
+  .price02 p {
+    font-size: 16px; }
+    @media screen and (min-width: 1200px) {
+      .price02 p {
+        font-size: 18px;
+        font-weight: bold; } }
+
+@media screen and (min-width: 1200px) {
+  .guarantee-area p {
+    font-size: 18px; } }
+
+.content04 h1 {
+  font-size: 28px; }
+  @media screen and (min-width: 1200px) {
+    .content04 h1 {
+      font-size: 48px; } }
+
+.trainer-info {
+  background-color: #b2ecb2;
+  border-radius: 1em; }
+  .trainer-info img {
+    max-width: 140px; }
+    @media screen and (min-width: 1200px) {
+      .trainer-info img {
+        max-width: 200px; } }
+  .trainer-info h3 {
+    font-size: 24px; }
+  @media screen and (min-width: 1200px) {
+    .trainer-info p {
+      font-size: 18px; } }
+  @media screen and (min-width: 768px) {
+    .trainer-info {
+      height: 100%; } }
+
+.customer-info {
+  background-color: antiquewhite;
+  border-radius: 1em;
+  position: relative; }
+  .customer-info img {
+    max-width: 60px; }
+    @media screen and (min-width: 768px) {
+      .customer-info img {
+        max-width: 100px; } }
+  .customer-info span {
+    padding-left: 10px; }
+  @media screen and (min-width: 1200px) {
+    .customer-info p, .customer-info span {
+      font-size: 18px; } }
+  @media screen and (min-width: 768px) {
+    .customer-info {
+      height: 440px; } }
+  @media screen and (min-width: 1200px) {
+    .customer-info {
+      height: 480px; } }
+
+.customer-detail {
+  width: 100%; }
+  @media screen and (min-width: 768px) {
+    .customer-detail {
+      position: absolute;
+      bottom: 20px; } }
+
+@media screen and (min-width: 1200px) {
+  iframe {
+    height: 200px; } }
+
+.address-area h1 {
+  color: #ffffff;
+  font-size: 24px; }
+  @media screen and (min-width: 1200px) {
+    .address-area h1 {
+      font-size: 32px; } }
+.address-area p {
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 1.2em; }
+  @media screen and (min-width: 1200px) {
+    .address-area p {
+      font-size: 18px; } }
+@media screen and (max-width: 767px) {
+  .address-area h1, .address-area p {
+    text-align: center; } }
+
+/*# sourceMappingURL=custom.css.map */

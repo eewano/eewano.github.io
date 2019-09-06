@@ -1,0 +1,355 @@
+@charset "utf-8";
+
+// ▼レスポンシブの変数化▼
+$breakpoints: (
+    'sm': 'screen and (max-width: 767px)',
+    'md': 'screen and (min-width: 768px)',
+    'lg': 'screen and (min-width: 1200px)'
+) !default;
+
+@mixin mq($breakpoint: md) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
+
+// ▼申し込みボタン▼
+@mixin app-button {
+    font-size: 20px;
+    height: 80px;
+    background-color: #4eb119;
+    border: 6px solid #3f7d0e;
+    border-radius: 1em;
+    box-sizing: border-box;
+
+    &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+    }
+
+    @include mq(sm) {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    @include mq(lg) {
+        font-size: 32px;
+        height: 100px;
+    }
+}
+
+// ▼ピンク文字▼
+@mixin text-campaign {
+    font-size: 36px;
+    color: #f600b1;
+    letter-spacing: 0.2em;
+    text-shadow: 2px 2px #444444;
+
+    @include mq(sm) {
+        font-size: 24px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    @include mq(lg) {
+        font-size: 48px;
+    }
+}
+
+// ▼店内紹介文▼
+@mixin explain-box {
+    background-color: #eeeeee;
+    
+    h2 {
+        font-size: 18px;
+        background-color: #ff0000;
+
+        @include mq(lg) {
+            font-size: 28px;
+        }
+    }
+
+    p {
+        @include mq(lg) {
+            font-size: 18px;
+        }
+    }
+}
+
+// ▼サービスと料金▼
+@mixin price-box($color) {
+    background-color: $color;
+    border-radius: 2em;
+
+    h3 {
+        font-size: 24px;
+
+        @include mq(lg) {
+            font-size: 32px;
+        }
+    }
+
+    p {
+        font-size: 16px;
+
+        @include mq(lg) {
+            font-size: 18px;
+            font-weight: bold;
+        }
+    }
+}
+
+// ▼トレーナーの紹介▼
+@mixin trainer-box() {
+    background-color: #b2ecb2;
+    border-radius: 1em;
+
+    img {
+        max-width: 140px;
+
+        @include mq(lg) {
+            max-width: 200px;
+        }
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    p {
+        @include mq(lg) {
+            font-size: 18px;
+        }
+    }
+
+    @include mq(md) {
+        height: 100%;
+    }
+}
+
+// ▼お客様の声▼
+@mixin customer-box() {
+    background-color: antiquewhite;
+    border-radius: 1em;
+
+    img {
+        max-width: 60px;
+
+        @include mq(md) {
+            max-width: 100px;
+        }
+    }
+
+    span {
+        padding-left: 10px;
+    }
+
+    p, span {
+        @include mq(lg) {
+            font-size: 18px;
+        }
+    }
+
+    @include mq(md) {
+        height: 440px;
+    }
+
+    @include mq(lg) {
+        height: 480px;
+    }
+}
+
+* {
+    color: #444444;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+h1, h2, h3, p, ul, li {
+    line-height: 1.5em;
+}
+
+.pc-width {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.application {
+    @include app-button();
+}
+
+// ▼ヘッダー▼
+header {
+    background-color: #eeeeee;
+}
+
+.content-header {
+    h1 {
+        font-size: 20px;
+
+        @include mq(md) {
+            font-size: 32px;
+        }
+
+        @include mq(lg) {
+            font-size: 48px;
+        }
+    }
+
+    p {
+        font-size: 14px;
+
+        @include mq(lg) {
+            font-size: 24px;
+        }
+    }
+}
+
+.intro-text-area ul {
+    @include mq(lg) {
+        font-size: 18px;
+    }
+}
+
+.campaign {
+    @include text-campaign();
+}
+// ▲ヘッダー▲
+
+// ▼コンテンツ01▼
+.content01 {
+    background-color: antiquewhite;
+}
+
+.intro-text-area {
+    ul {
+        padding-left: 0;
+    }
+}
+
+.bmi-area {
+    background-color: burlywood;
+    border-radius: 1em;
+
+    h2 {
+        font-size: 24px;
+    }
+
+    ul {
+        list-style-type: none;
+
+        li {
+            margin-bottom: 4px;
+        }
+    }
+}
+// ▲コンテンツ01▲
+
+// ▼Content02▼
+.explain-box-area {
+    @include explain-box();
+}
+// ▲Content02▲
+
+// ▼Content03▼
+.content03 {
+    background-color: #eeeeee;
+
+    h1 {
+        font-size: 28px;
+
+        @include mq(lg) {
+            font-size: 48px;
+        }
+    }
+
+    h2 {
+        font-size: 28px;
+
+        @include mq(lg) {
+            font-size: 32px;
+        }
+    }
+}
+
+.price01 {
+    @include price-box(#b2ecb2);
+}
+
+.price02 {
+    @include price-box(#ffb7eb);
+}
+
+.guarantee-area {
+    @include mq(lg) {
+        p {
+            font-size: 18px;
+        }
+    }
+}
+// ▲Content03▲
+
+// ▼Content04▼
+.content04 {
+    h1 {
+        font-size: 28px;
+
+        @include mq(lg) {
+            font-size: 48px;
+        }
+    }
+}
+
+.trainer-info {
+    @include trainer-box();
+}
+
+.customer-info {
+    @include customer-box();
+    position: relative;
+}
+
+.customer-detail {
+    width: 100%;
+
+    @include mq(md) {
+        position: absolute;
+        bottom: 20px;
+    }
+}
+// ▲Content04▲
+
+// ▼フッター▼
+iframe {
+    @include mq(lg) {
+        height: 200px;
+    }
+}
+
+.address-area {
+    h1 {
+        color: #ffffff;
+        font-size: 24px;
+
+        @include mq(lg) {
+            font-size: 32px;
+        }
+    }
+
+    p {
+        font-size: 14px;
+        color: #ffffff;
+        line-height: 1.2em;  
+
+        @include mq(lg) {
+            font-size: 18px;
+        }
+    }
+
+    @include mq(sm) {
+        h1, p {
+            text-align: center;
+        }
+    }
+}
+// ▲フッター▲

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hibino JUNGLE GYM</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="custom/custom.css">
+</head>
+<body>
+    <div class="pc-width mx-auto">
+
+         <!-- ▼ヘッダー▼ -->
+        <header class="container">
+            <div class="content-header row text-center">
+                <h1 class="col-xs-12 mb-0 py-4 w-100 text-center font-weight-bold text-white bg-secondary">カラダが変革する<br>
+                    トレーニング環境を求めている方！</h1>
+                <img src="img/header_top01.png" class="img-fluid mx-auto" alt="">
+                <button type="button" class="application col-xs-12 col-md-6 offset-md-3 my-5 text-center font-weight-bold text-white" name="application" value="">申し込みはこちら</button>
+                
+                <h2 class="campaign mx-md-auto font-weight-bold">おかげさまで会員5000人突破！</h2>
+                <p class="mx-3 mx-md-5 my-4">パーソナルトレーニングジム「Hibino JUNGLE GYM」では、あなたにあったオーダーメイドトレーニングメソッドにより、効果的なボディメイキングが可能です！</p>
+            </div>
+        </header>
+        <!-- ▲ヘッダー▲ -->
+
+        <main class="container">
+            <!-- ▼コンテンツ01▼ -->
+            <div class="content01 row">
+                <div class="col-xs-12 col-lg-7">
+                    <div class="intro-text-area mx-3 mx-md-5 my-4 py-3">
+                        <p>健康を維持する為に始めた様々な運動。しかし、「目的意識」が無ければ、「継続する気持ち」が無ければいずれその意欲も薄れていき、元の平凡な生活に...。</p>
+                        <p>健康を維持するだけでなく、己の身体を鍛えて自らの肉体の変化を感じる事で楽しみを得る、それこそが運動でありトレーニングなのです。肉体の変化の喜びがそのまま継続する意識に繋がり、人生に活力を与えます。</p>
+                        <p>当社ジムはその活力を惜しみなく得られる為の施設やメソッドを揃えておりますので、是非とも一度 Hibino JUNGLE GYM を体験してみて下さい！</p>
+                        <p>また、今までトレーニングに興味の無かった人も、一度BMIの測定をやってみる事で新たな発見を得られます。</p>
+                        <ul class="mx-3">
+                            <li>最近、太り過ぎを実感している...。</li>
+                            <li>明らかに体力も落ちて危機感が芽生えてきた...。</li>
+                            <li>身体を鍛える事で人生を少しでも変えられたら...。</li>
+                        </ul>
+                        <p>各自にあったトレーニングメソッドを提供しております。上記の悩みも、ぜひ当社ジムにて吹き飛ばしてみてはいかがでしょうか？</p>
+                    </div>
+                </div>
+
+                <!-- ▼BMIエリア▼ -->
+                <div class="col-xs-12 col-lg-5">
+                    <div class="bmi-area mx-3 mx-md-5 mx-lg-3 mt-lg-5 mb-4 py-3 text-center">
+                        <h2 class="pt-3 font-weight-bold">あなたのBMIはいくつ？</h2>
+                        <p>今すぐ計算してみましょう。<br>
+                            『BMI＝体重(kg)÷身長(m)×身長(m)』</p>
+                        <form name="bmi">
+                            <ul class="pl-0">
+                                <li class="bmi-height">
+                                    <label for="height">身長</label>
+                                    <input type="text" id="height" name="bmiHeight">
+                                </li>
+                                <li class="bmi-weight">
+                                    <label for="weight">体重</label>
+                                    <input type="text" id="weight" name="bmiWeight">
+                                </li>
+                                <li>
+                                    <button type="button" class="bmi-button btn-secondary mb-1" name="bmiResult" onclick="fncBMI()">BMIを計算</button>
+                                </li>
+                                <li class="bmi-result">
+                                    <label for="result">結果</label>
+                                    <input type="text" id="result" name="bmiAns">
+                                </li>
+                            </ul>
+    
+                            <p class="mx-3 mx-md-5" style="color:brown;">※BMIが25以上だと、ちょっと肥満気味かもしれません。BMIが18未満の場合は痩せすぎている可能性があります。</p>
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- ▲コンテンツ01▲ -->
+
+            <!-- ▼コンテンツ02▼ -->
+            <div class="content02 row">
+                <div class="explain-box-area row mx-3 mt-3">
+                    <div class="col-xs-12 col-md-4 px-md-0 pt-3 pt-md-0">
+                        <img src="img/gym01.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="explain-text col-xs-12 col-md-8 px-md-0">
+                        <h2 class="mx-md-0 py-2 text-center font-weight-bold text-white">圧倒的な規模と設備</h2>
+                        <p class="mx-4 mx-lg-5 py-2 py-lg-3">当社ジムの強みは極めて充実した広さと設備です。訪れたお客様に対し、ご希望のトレーニングを可能な限り実施してもらいたく、潤沢なスペースとあらゆる種類の機器を揃えております。<br>
+                            時間を気にせず、お役様各自のスタイルでトレーニングをお楽しみ下さい。</p>
+                    </div>
+                </div>
+                <div class="explain-box-area row mx-3 mt-3">
+                    <div class="col-xs-12 col-md-4 px-md-0 pt-3 pt-md-0 order-2">
+                        <img src="img/gym02.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="explain-text col-xs-12 col-md-8 px-md-0 order-1">
+                        <h2 class="py-2 text-center font-weight-bold text-white">完全プライベート空間</h2>
+                        <p class="mx-4 mx-lg-5 py-2 py-lg-3">当社では別エリアにて、何と完全予約制の個室もご用意しております。ここでは人目を気にせず集中してトレーニングができます。<br>
+                            肉体の改造を本気で考えていらっしゃるお客様はもとより、初心者の方で人目が気になるお客様に対してもご満足頂けるプライベート空間となっております。</p>
+                    </div>
+                </div>
+                <div class="explain-box-area row mx-3 mt-3">
+                    <div class="col-xs-12 col-md-4 px-md-0 pt-3 pt-md-0">
+                        <img src="img/gym03.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="explain-text col-xs-12 col-md-8 px-md-0">
+                        <h2 class="mx-md-0 py-2 text-center font-weight-bold text-white">プロのトレーナーによるレッスン</h2>
+                        <p class="mx-4 mx-lg-5 py-2 py-lg-3">独自のトレーニングでは物足りない方、効果的な身体の鍛え方を知りたいお客様の為に、当社ではプロのトレーナーによる無料レッスンを開いております。曜日ごとに様々なレッスンが行われておりますので、気になるレッスンがあればどなたでもご参加頂けます。</p>
+                        <p class="mx-4">※各レッスンごとに定員数が決められております。</p>
+                    </div>
+                </div>
+
+                <p class="col-xs-12 mx-4 mt-4">また、お仕事前や帰り、お友達とのお出掛け前や帰り等にも気兼ねなくご利用いただくため、トレーニングウェアやミネラルウォーター、シューズ、タオル等の無料レンタルを行っています。</p>
+            </div>
+            <!-- ▲コンテンツ02▲ -->
+
+            <div class="row">
+                <button type="button" class="application col-xs-12 col-md-6 offset-md-3 my-5 text-center font-weight-bold text-white" name="application" value="">申し込みはこちら</button>
+                <img src="img/central01.jpg" class="central-img img-fluid mx-0 w-100" alt="">
+            </div>
+
+            <!-- ▼コンテンツ03▼ -->
+            <div class="content03 row">
+                <h1 class="col-12 mx-auto mt-5 text-center font-weight-bold">サービスと料金</h1>
+
+                <div class="col-xs-12 col-md-6">
+                    <div class="price01 ml-md-4 ml-lg-5 mt-4 py-3 py-md-4 py-lg-5 text-center">
+                        <h3 class="font-weight-bold">ボディメイキング<br>コース</h3>
+                        <p>入会金: 無料</p>
+                        <p>料金: 2ヶ月16回 200,000円（税別）</p>
+                        <p>内容: 週2回（1回60分のトレーニング）</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <div class="price02 mr-md-4 mr-lg-5 mt-4 py-3 py-md-4 py-lg-5 text-center">
+                        <h3 class="font-weight-bold">アドバンスド<br>コース</h3>
+                        <p>入会金: 無料</p>
+                        <p>料金: 2ヶ月24回 380,000円（税別）</p>
+                        <p>内容: 週2回（1回90分のトレーニング）</p>
+                    </div>
+                </div>
+
+                <h2 class="mx-auto mt-5 mb-3 text-center font-weight-bold">60日間返金保証</h2>
+                <div class="guarantee-area mx-4 mx-lg-5">
+                    <p>当ジムでは、トレーナーの指示通り実践して頂いたにも関わらずプログラムに満足されなかった場合、全額返金させて頂きます。</p>
+                    <p>60日間というプログラムが終わるまでの期間が保証対象となりますので、あなたにリスクはなにもありません。安い金額ではありませんので一歩を踏み出せない方にも、安心して体験いただけます。</p>
+                    <p>あなたが体を鍛えたいとお考えでしたら、一人ひとりに最適なトレーニングを行う　Hibino JUNGLE GYM　にお越しください。プロのトレーナーがフルオーダーメイドのメニューを作成しトレーニングを行うため、ご自身のトレーニング方法に悩むことはありません。安全安心して取り組んでいただけます。</p>
+                </div>
+                    
+                <p class="campaign mx-md-auto mt-4 text-center font-weight-bold">さらに今なら10000円のキャッシュバック！！</p>
+            </div>
+            <!-- ▲コンテンツ03▲ -->
+
+            <div class="row" style="background-color:#eeeeee;">
+                <button type="button" class="application col-xs-12 col-md-6 offset-md-3 my-5 text-center font-weight-bold text-white" name="application" value="">申し込みはこちら</button>
+                <img src="img/central02.jpg" class="central-img img-fluid" alt="">
+            </div>
+
+            <!-- ▼コンテンツ04▼ -->
+            <div class="content04 row">
+                <h1 class="col-12 mx-auto mt-5 text-center font-weight-bold">トレーナーの紹介</h1>
+
+                <!-- ▼トレーナー紹介▼ -->
+                <div class="col-xs-12 col-md-6 mb-md-4">
+                    <div class="trainer-info mx-3 mx-md-2 mx-lg-5 mt-4 px-4 pt-3 pb-2">
+                        <img src="img/trainer01.jpg" class="img-fluid rounded-circle mx-auto d-block py-4" alt="">
+                        <h3 class="text-center mb-3">山田 太郎 43歳</h3>
+                        <p>入社して15年。トレーナーとしての活動は10年になります。</p>
+                        <p>様々なお客様との関わりや指導の経験を活かし、現在も皆様に対し最適なサポートをさせて頂いております。ご希望の身体を手に入れたい熱い志を持った方、本気で自分を変えたい方、是非とも当社ジムにて夢を叶えましょう！</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 mb-md-4">
+                    <div class="trainer-info mx-3 mx-md-2 mx-lg-5 mt-4 px-4 pt-3 pb-2">
+                        <img src="img/trainer02.jpg" class="img-fluid rounded-circle mx-auto d-block py-4" alt="">
+                        <h3 class="text-center mb-3">橘 涼子 28歳</h3>
+                        <p>入社してから6年になります。</p>
+                        <p>自ら身体を動かして鍛える事が大好きで、入社時からトレーナーとして活動しております！６年間、全力でお客様と向き合い、沢山の方々から「ありがとう」と言われるくらい、実績と経験を積んできました。<br>
+                            ご自身の望む身体を手に入れたい方、ぜひ私にお任せ下さい！</p>
+                    </div>
+                </div>
+
+                <!-- ▼お客様エリア▼ -->
+                <h1 class="col-12 mx-auto mt-5 text-center font-weight-bold">お客様の声</h1>
+
+                <div class="col-xs-12 col-md-6 col-lg-4">
+                    <div class="customer-info mx-4 mx-md-2 mt-4 px-4 py-4">
+                        <p>いくつかトレーニングジムを経験してきましたが、「本気で筋肉を付けたい」という抑えきれない気持ちを最高の形で受け止め、叶えさせてくれたのが Hibino JUNGLE GYM です。</p>
+                        <p>トレーニング方法や維持の仕方等、ここまで叶えたい要望を丁寧にサポートしてくれた事に驚きと感謝を隠せません。間違いなく料金以上の満足感を得られると思います。</p>
+                        <div class="customer-detail">
+                            <img src="img/customer01.jpg" class="img-fluid rounded-circle" alt=""><span>（30代 会社員 男性）</span>
+                        </div>
+                    </div>
+                </div>    
+                <div class=" col-xs-12 col-md-6 col-lg-4">
+                    <div class="customer-info mx-4 mx-md-2 mt-4 px-4 py-4">
+                        <p>その日にやりたいトレーニングが必ずと言っていい程行える事に満足です。</p>
+                        <p>当初は物凄いスパルタンなイメージを持っていましたが、気兼ねする事なく手軽に通えて自分のペースを維持しながら身体を鍛える事ができます。</p>
+                        <p>トレーナーの方達もとても面白くて、笑顔とやる気を頂きました。</p>
+                        <div class="customer-detail">
+                            <img src="img/customer02.jpg" class="img-fluid rounded-circle" alt=""><span>（40代 会社員 女性）</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 offset-md-3 col-lg-4 offset-lg-0">
+                    <div class="customer-info mx-4 mx-md-2 mt-4 px-4 py-4">
+                        <p>完全に運動不足だった為、肥満体型を直そうと当ジムを利用させて頂いております。</p>
+                        <p>多少キツイ事もありますが、無理なく、かといって妥協の無いトレーニングや指導によって、今ではかなり筋肉が付き、体重も10キロは痩せました。</p>
+                        <p>何より、完全個室は有難いですね。人目を気にせずトレーニングに集中できます。</p>
+                        <div class="customer-detail">
+                            <img src="img/customer03.jpg" class="img-fluid rounded-circle" alt=""><span>（20代 会社員 男性）</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <button type="button" class="application col-xs-12 col-md-6 offset-md-3 my-5 text-center font-weight-bold text-white" name="application" value="">申し込みはこちら</button>
+            </div>
+            <!-- ▲コンテンツ04▲ -->
+        </main>
+    </div>
+
+    <!-- ▼フッター▼ -->
+    <div class="footer-pc bg-secondary">
+        <footer class="container">
+            <div class="content-footer row bg-secondary">
+                <div class="col-xs-12 col-md-6 col-lg-5 text-center">
+                    <iframe class="my-4" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.010346202135!2d139.7615645145481!3d35.67674723782668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfabc68fde1%3A0xc4ca6a002ded263d!2z5p2x5Lqs5Zu96Zqb44OV44Kp44O844Op44Og!5e0!3m2!1sja!2sjp!4v1567489991250!5m2!1sja!2sjp"></iframe>
+                </div>
+                <div class="address-area col-xs-12 col-md-6 col-lg-7 pb-3">
+                    <h1 class="mt-md-3 mt-md-4 font-weight-bold">Hibino JUNGLE GYM</h1>
+                    <p>住所: 東京都 千代田区 神田 神保町 2-2-2</p>
+                    <p>●●●●ビル 2F</p>
+                    <p>TEL: 00-0000-0000</p>
+                    <p>Facebook:  Twitter:  Instagram:</p>
+                </div>
+            </div> 
+        </footer>
+    </div>
+    <!-- ▲フッター▲ -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="custom/main.js"></script>
+</body>
+</html>
