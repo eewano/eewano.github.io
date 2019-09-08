@@ -1,0 +1,13 @@
+a {
+  text-decoration: none; }
+
+.btn-all-link {
+  width: 50%;
+  padding: 20px;
+  background-color: #389bc2;
+  color: #ffffff;
+  text-align: center; }
+  .btn-all-link:hover {
+    background-color: #fdb657; }
+
+/*# sourceMappingURL=custom.css.map */
