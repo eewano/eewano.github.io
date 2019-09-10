@@ -10,6 +10,7 @@ a {
     background-color: #389bc2;
     color: #ffffff;
     text-align: center;
+    box-sizing: border-box;
 
     &:hover {
         background-color: #fdb657;
@@ -18,4 +19,16 @@ a {
 
 #upper-under-chara {
     margin-top: 40px;
+}
+
+#program-area {
+
+    pre {
+        font-size: 16px;
+        line-height: 1.5em;
+        background-color: #eeeeff;
+        width: 50%;
+        padding-top: 10px;
+        padding-bottom: 0;
+    }
 }

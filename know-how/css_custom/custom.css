@@ -6,11 +6,20 @@ a {
   padding: 20px;
   background-color: #389bc2;
   color: #ffffff;
-  text-align: center; }
+  text-align: center;
+  box-sizing: border-box; }
   .btn-all-link:hover {
     background-color: #fdb657; }
 
 #upper-under-chara {
   margin-top: 40px; }
+
+#program-area pre {
+  font-size: 16px;
+  line-height: 1.5em;
+  background-color: #eeeeff;
+  width: 50%;
+  padding-top: 10px;
+  padding-bottom: 0; }
 
 /*# sourceMappingURL=custom.css.map */
