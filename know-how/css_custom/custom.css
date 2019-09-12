@@ -22,4 +22,15 @@ a {
   padding-top: 10px;
   padding-bottom: 0; }
 
+#flexbox-right-area nav ul {
+  background-color: #444444;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0; }
+  #flexbox-right-area nav ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 20px 30px; }
+
 /*# sourceMappingURL=custom.css.map */
