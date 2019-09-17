@@ -48,3 +48,25 @@ a {
         }
     }
 }
+
+#big-chara-at-first p {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.lead::first-letter {
+    float: left;
+    padding: 0.05em 0.05em 0 0;
+    line-height: 0.95em;
+    font-size: 4.1em;
+    font-weight: bold;
+}
+
+#hover-outline a {
+    color: #ea6357;
+    text-decoration: none;
+}
+
+a:hover {
+    outline: 1px solid #ea6357;
+}
