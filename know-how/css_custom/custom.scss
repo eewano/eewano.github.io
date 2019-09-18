@@ -70,3 +70,13 @@ a {
 a:hover {
     outline: 1px solid #ea6357;
 }
+
+#hide-text {
+    width: 400px;
+}
+
+#hide-text p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
