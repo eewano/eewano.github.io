@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-body {
+html, body, div, span, h1, p, header, section {
     margin: 0;
     padding: 0;
     border: 0;
@@ -10,5 +10,27 @@ body {
 }
 
 body {
+    background-color: #444444;
+    color: #dddddd;
     line-height: 1;
+    height: 5000px;
+}
+
+header, section {
+    display: block;
+}
+
+body, select {
+    font-size: 13pt;
+    line-height: 1.6s;
+}
+
+p {
+    margin: 0 0 2em 0;
+}
+
+h1 {
+    line-height: 1.5;
+    margin: 0 0 1em 0;
+    color: #ffffff;
 }
