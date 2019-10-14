@@ -2,6 +2,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; }
+  .flex.flex-2 {
+    align-items: stretch; }
+    .flex.flex-2 .col {
+      width: 48%; }
   .flex.flex-3 {
     align-items: stretch; }
     .flex.flex-3 .col {

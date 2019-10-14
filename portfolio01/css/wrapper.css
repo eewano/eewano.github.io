@@ -1,0 +1,10 @@
+.wrapper {
+  padding: 6em 0 4em 0;
+  position: relative; }
+  .wrapper .inner {
+    margin: 0 auto;
+    width: 80em;
+    position: relative;
+    z-index: 99; }
+
+/*# sourceMappingURL=wrapper.css.map */

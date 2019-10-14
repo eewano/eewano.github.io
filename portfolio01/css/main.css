@@ -1,0 +1,65 @@
+.align-center {
+  text-align: center; }
+
+.video {
+  background: rgba(255, 255, 255, 0.075);
+  border-radius: 4px;
+  margin: 0 0 2em 0;
+  overflow: hidden;
+  position: relative; }
+  .video img {
+    transition: transform 0.2s ease-in-out; }
+  .video:hover img {
+    transform: scale(1.075); }
+  .video:hover .image .arrow .icon_area {
+    color: white; }
+  .video .image {
+    margin: 0;
+    position: relative;
+    overflow: hidden; }
+    .video .image .arrow {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      text-align: center; }
+    .video .image .icon_area {
+      transition: color 1s ease-in-out;
+      display: inline-block;
+      vertical-align: middle;
+      color: rgba(255, 255, 255, 0.5); }
+  .video .caption {
+    color: #c0c5c9;
+    padding: 1.5em;
+    font-size: 1.25em;
+    font-weight: 300;
+    margin: 0; }
+  .video .link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    top: 0;
+    left: 0; }
+    .video .link span {
+      display: none; }
+
+.image {
+  border: 0;
+  display: inline-block;
+  position: relative; }
+  .image img {
+    display: block; }
+  .image.fit {
+    display: block;
+    width: 100%; }
+    .image.fit img {
+      width: 100%; }
+
+.icon_area {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+
+/*# sourceMappingURL=main.css.map */

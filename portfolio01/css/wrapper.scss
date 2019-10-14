@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+.wrapper {
+    padding: 6em 0 4em 0;
+    position: relative;
+
+    .inner {
+        margin: 0 auto;
+        width: 80em;
+        position: relative;
+        z-index: 99;
+    }
+}

@@ -7,6 +7,11 @@ header {
         color: #676d71;
     }
 
+    h2 + p {
+        font-size: 1.25em;
+        margin-top: 1em;
+    }
+
     h3 + p {
         font-size: 1.1em;
         margin-top: 0.8em;

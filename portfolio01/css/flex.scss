@@ -5,6 +5,14 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    &.flex-2 {
+        align-items: stretch;
+
+        .col {
+            width: 48%;
+        }
+    }
+
     &.flex-3 {
         align-items: stretch;
 
