@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+header {
+    p {
+        position: relative;
+        margin: 0 0 1.5em 0;
+        color: #676d71;
+    }
+
+    h3 + p {
+        font-size: 1.1em;
+        margin-top: 0.8em;
+    }
+}

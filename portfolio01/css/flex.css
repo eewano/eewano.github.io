@@ -1,0 +1,10 @@
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .flex.flex-3 {
+    align-items: stretch; }
+    .flex.flex-3 .col {
+      width: 31%; }
+
+/*# sourceMappingURL=flex.css.map */

@@ -1,0 +1,20 @@
+#footer {
+  padding: 6em 0 4em 0; }
+  #footer > .inner {
+    margin: 0 auto;
+    width: 80em; }
+  #footer .copyright {
+    color: #777777;
+    font-size: 0.9em;
+    margin: 0 0 2em 0;
+    padding: 0;
+    text-align: center; }
+    #footer .copyright .icons {
+      margin: 2em 0 1em 0; }
+
+.icon {
+  text-decoration: none;
+  border-bottom: none;
+  position: relative; }
+
+/*# sourceMappingURL=footer.css.map */

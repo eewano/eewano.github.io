@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGI,QAAE;EACE,QAAQ,EAAE,QAAQ;EAClB,MAAM,EAAE,WAAW;EACnB,KAAK,EAAE,OAAO;AAGlB,aAAO;EACH,SAAS,EAAE,KAAK;EAChB,UAAU,EAAE,KAAK",
+"sources": ["section_article.scss"],
+"names": [],
+"file": "section_article.css"
+}

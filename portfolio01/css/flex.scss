@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &.flex-3 {
+        align-items: stretch;
+
+        .col {
+            width: 31%;
+        }
+    }
+}
