@@ -20,4 +20,51 @@
             width: 31%;
         }
     }
+
+    &.flex-tabs {
+        flex-wrap: nowrap;
+
+        ul {
+            width: 20%;
+        }
+
+        .tabs {
+            width: 77%;
+        }
+    }
+}
+
+ul {
+    &.tab-list {
+        list-style: none;
+        margin: 0 0 1em 0;
+        padding: 0;
+
+        li {
+            a {
+                background: rgba(255, 255, 255, 0.075);
+                border-radius: 4px;
+                margin-bottom: 0.5em;
+                padding: 0.5em 1em;
+                display: inline-block;
+                width: 100%;
+
+                &.active {
+                    background: #ff00ff;
+                }
+
+                &:hover {
+                    background: #880088;
+                }
+            }
+        }
+    }
+}
+
+.tab {
+    display: none;
+
+    &.active {
+        display: flex;
+    }
 }

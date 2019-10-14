@@ -6,5 +6,7 @@
     width: 80em;
     position: relative;
     z-index: 99; }
+  .wrapper header {
+    margin-bottom: 4em; }
 
 /*# sourceMappingURL=wrapper.css.map */

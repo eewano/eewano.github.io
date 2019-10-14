@@ -10,5 +10,32 @@
     align-items: stretch; }
     .flex.flex-3 .col {
       width: 31%; }
+  .flex.flex-tabs {
+    flex-wrap: nowrap; }
+    .flex.flex-tabs ul {
+      width: 20%; }
+    .flex.flex-tabs .tabs {
+      width: 77%; }
+
+ul.tab-list {
+  list-style: none;
+  margin: 0 0 1em 0;
+  padding: 0; }
+  ul.tab-list li a {
+    background: rgba(255, 255, 255, 0.075);
+    border-radius: 4px;
+    margin-bottom: 0.5em;
+    padding: 0.5em 1em;
+    display: inline-block;
+    width: 100%; }
+    ul.tab-list li a.active {
+      background: #ff00ff; }
+    ul.tab-list li a:hover {
+      background: #880088; }
+
+.tab {
+  display: none; }
+  .tab.active {
+    display: flex; }
 
 /*# sourceMappingURL=flex.css.map */
