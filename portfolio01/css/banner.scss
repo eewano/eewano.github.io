@@ -15,7 +15,16 @@
     text-align: center;
     overflow: hidden;
 
+    .inner {
+        transform: scale(1.0);
+        transition: opacity 1s ease, transform 1 ease;
+        opacity: 1;
+        position: relative;
+        z-index: 2;
+    }
+
     h1 {
+        color: #dddddd;
         font-size: 4em;
         margin-bottom: 0.25em;
     }
@@ -23,5 +32,20 @@
     p {
         color: rgba(255, 255, 255, 0.65);
         font-size: 1.5em;
+    }
+
+    &:before {
+        transition: opacity 3s ease;
+        transition-delay: 1.25s;
+        content: '';
+        display: block;
+        background-color: #000000;
+        height: 100%;
+        left: 0;
+        opacity: 0.5;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1;
     }
 }
