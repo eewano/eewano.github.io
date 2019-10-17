@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import "./normalize.scss";
+
 .wrapper {
     padding: 6em 0 4em 0;
     position: relative;
@@ -13,5 +15,23 @@
 
     header {
         margin-bottom: 4em;
+
+        @include mq(md) {
+            margin-bottom: 2em;
+        }
+    }
+
+    > .inner {
+        @include mq(lg) {
+            width: 65em;
+        }
+
+        @include mq(rg) {
+            width: 90%;
+        }
+    }
+
+    @include mq(md) {
+        padding: 3em 0 1em 0;
     }
 }
