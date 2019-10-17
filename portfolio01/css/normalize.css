@@ -10,13 +10,12 @@ body {
   background-color: #222222;
   color: #dddddd;
   line-height: 1; }
+  @media screen and (max-width: 980px) {
+    body {
+      padding-top: 44px; } }
 
 header, footer, section {
   display: block; }
-
-body {
-  font-size: 13pt;
-  line-height: 1.6s; }
 
 p {
   margin: 0 0 2em 0; }

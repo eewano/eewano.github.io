@@ -1,5 +1,18 @@
 @charset "UTF-8";
 
+$breakpoints: (
+    'sm': 'screen and (max-width: 480px)',
+    'md': 'screen and (max-width: 736px)',
+    'rg': 'screen and (max-width: 980px)',
+    'lg': 'screen and (max-width: 1280px)',
+) !default;
+
+@mixin mq($breakpoint: md) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
+
 html, body, div, span, h1, h2, h3, p, a, ul, li, img, caption, header, footer, section {
     margin: 0;
     padding: 0;
@@ -13,15 +26,14 @@ body {
     background-color: #222222;
     color: #dddddd;
     line-height: 1;
+
+    @include mq(rg) {
+        padding-top: 44px;
+    }
 }
 
 header, footer, section {
     display: block;
-}
-
-body {
-    font-size: 13pt;
-    line-height: 1.6s;
 }
 
 p {

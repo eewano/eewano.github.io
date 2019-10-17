@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import "./normalize.scss";
+
 #banner {
     padding: 8em 0 6em 0;
     align-items: center;
@@ -21,17 +23,35 @@
         opacity: 1;
         position: relative;
         z-index: 2;
+
+        @include mq(md) {
+            width: 100%;
+        }
     }
 
     h1 {
         color: #dddddd;
         font-size: 4em;
         margin-bottom: 0.25em;
+
+        @include mq(md) {
+            font-size: 1.75em;
+            margin-bottom: 0.5em;
+            padding-bottom: 0;
+        }
     }
 
     p {
         color: rgba(255, 255, 255, 0.65);
         font-size: 1.5em;
+
+        @include mq(md) {
+            font-size: 1.25em;
+        }
+
+        @include mq(sm) {
+            font-size: 1em;
+        }
     }
 
     &:before {
@@ -47,5 +67,11 @@
         top: 0;
         width: 100%;
         z-index: 1;
+    }
+
+    @include mq(md) {
+        min-height: 0;
+        height: auto !important;
+        padding: 4em 2em;
     }
 }

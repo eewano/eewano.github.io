@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import "./normalize.scss";
+
 #header {
     background: rgba(32, 32, 32, 0.75);
     color: #dddddd;
@@ -13,6 +15,15 @@
     width: 100%;
     z-index: 10001;
 
+    @include mq(rg) {
+        height: 44px;
+        line-height: 44px;
+    }
+
+    @include mq(sm) {
+        min-width: 320px;
+    }
+
     > h1 {
         font-size: 2em;
         color: #dddddd;
@@ -24,6 +35,14 @@
         padding: 0;
         position: absolute;
         top: 0;
+
+        @include mq(rg) {
+            left: 1em;
+
+            a {
+                font-size: 1em;
+            }
+        }
 
         span {
             font-weight: 300;
@@ -39,6 +58,10 @@
 
         &:hover {
             color: #ffffff;
+        }
+
+        @include mq(md) {
+            padding: 0 0.5em;
         }
     }
 }
