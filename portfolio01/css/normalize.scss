@@ -57,6 +57,10 @@ p {
 }
 
 a {
+    -moz-transition: color 0.2s ease-in-out;
+    -webkit-transition: color 0.2s ease-in-out;
+    -ms-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
     text-decoration: none;
     color: #dddddd;
 }
@@ -90,5 +94,7 @@ h3 {
 }
 
 *, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }

@@ -33,6 +33,10 @@ p {
   margin: 0 0 2em 0; }
 
 a {
+  -moz-transition: color 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
   text-decoration: none;
   color: #dddddd; }
 
@@ -58,12 +62,26 @@ h3 {
   font-size: 1.75em; }
 
 *, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 #banner {
+  display: -ms-flexbox;
+  -ms-flex-pack: center;
+  -ms-flex-align: center;
   padding: 8em 0 6em 0;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
   align-items: center;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
   display: flex;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
   justify-content: center;
   background-image: url(../img/banner_top01.jpg);
   background-position: center;
@@ -71,11 +89,18 @@ h3 {
   background-repeat: no-repeat;
   border-top: 0;
   min-height: 100vh;
+  height: 100vh !important;
   position: relative;
   text-align: center;
   overflow: hidden; }
   #banner .inner {
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
     transform: scale(1);
+    -moz-transition: opacity 1s ease, -moz-transform 1 ease;
+    -webkit-transition: opacity 1s ease, -webkit-transform 1 ease;
+    -ms-transition: opacity 1s ease, -ms-transform 1 ease;
     transition: opacity 1s ease, transform 1 ease;
     opacity: 1;
     position: relative;
@@ -102,7 +127,13 @@ h3 {
       #banner p {
         font-size: 1em; } }
   #banner:before {
+    -moz-transition: opacity 3s ease;
+    -webkit-transition: opacity 3s ease;
+    -ms-transition: opacity 3s ease;
     transition: opacity 3s ease;
+    -moz-transition-delay: 1.25s;
+    -webkit-transition-delay: 1.25s;
+    -ms-transition-delay: 1.25s;
     transition-delay: 1.25s;
     content: '';
     display: block;

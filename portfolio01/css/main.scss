@@ -12,11 +12,17 @@
     position: relative;
 
     img {
+        -moz-transition: -moz-transform 0.2s ease-in-out;
+        -webkit-transition: -webkit-transform 0.2s ease-in-out;
+        -ms-transition: -ms-transform 0.2s ease-in-out;
         transition: transform 0.2s ease-in-out;
     }
 
     &:hover {
         img {
+            -moz-transform: scale(1.075);
+            -webkit-transform: scale(1.075);
+            -ms-transform: scale(1.075);
             transform: scale(1.075);
         }
 
@@ -39,6 +45,9 @@
             text-align: center;
 
             .icon_area {
+                -moz-transition: color 1s ease-in-out;
+                -webkit-transition: color 1s ease-in-out;
+                -ms-transition: color 1s ease-in-out;
                 transition: color 1s ease-in-out;
                 display: inline-block;
                 vertical-align: middle;
