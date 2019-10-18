@@ -42,6 +42,10 @@
             a {
                 font-size: 1em;
             }
+
+            @include mq(rg) {
+                font-size: 1em;
+            }
         }
 
         span {
