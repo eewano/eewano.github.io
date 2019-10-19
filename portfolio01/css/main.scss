@@ -106,6 +106,31 @@
     }
 }
 
+.portrait {
+    .image {
+        border-radius: 50%;
+        display: inline-block;
+        position: relative;
+        background: -moz-radial-gradient(ellipse farthest-side, #ff1493, #222222);
+        background: -webkit-radial-gradient(ellipse farthest-side, #ff1493, #222222);
+        background: -ms-radial-gradient(ellipse farthest-side, #ff1493, #222222);
+        background: radial-gradient(ellipse farthest-side, #ff1493, #222222);
+    
+        img {
+            display: block;
+        }
+    
+        &.fit {
+            display: block;
+            width: 100%;
+    
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
 .icon_area {
     position: absolute;
     top: 50%;

@@ -81,6 +81,19 @@ h3 {
   -webkit-justify-content: space-between;
   -ms-justify-content: space-between;
   justify-content: space-between; }
+  .flex.flex-1 .col {
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%; }
+    @media screen and (max-width: 1280px) {
+      .flex.flex-1 .col {
+        width: 30%; } }
+    @media screen and (max-width: 980px) {
+      .flex.flex-1 .col {
+        width: 35%; } }
+    @media screen and (max-width: 736px) {
+      .flex.flex-1 .col {
+        width: 50%; } }
   .flex.flex-2 {
     -moz-align-items: stretch;
     -webkit-align-items: stretch;

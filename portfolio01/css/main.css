@@ -73,6 +73,22 @@
     .image.fit img {
       width: 100%; }
 
+.portrait .image {
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  background: -moz-radial-gradient(ellipse farthest-side, #ff1493, #222222);
+  background: -webkit-radial-gradient(ellipse farthest-side, #ff1493, #222222);
+  background: -ms-radial-gradient(ellipse farthest-side, #ff1493, #222222);
+  background: radial-gradient(ellipse farthest-side, #ff1493, #222222); }
+  .portrait .image img {
+    display: block; }
+  .portrait .image.fit {
+    display: block;
+    width: 100%; }
+    .portrait .image.fit img {
+      width: 100%; }
+
 .icon_area {
   position: absolute;
   top: 50%;
