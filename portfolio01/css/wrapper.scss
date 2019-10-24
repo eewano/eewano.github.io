@@ -21,6 +21,12 @@
         }
     }
 
+    &.style01 {
+        p {
+            color: #bbbbbb;
+        }
+    }
+
     > .inner {
         @include mq(lg) {
             width: 65em;

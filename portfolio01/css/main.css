@@ -46,6 +46,8 @@
     font-weight: 300;
     margin: 0;
     line-height: 1.5em; }
+  .video a:hover .caption {
+    background: #777777; }
   .video .link {
     position: absolute;
     width: 100%;
@@ -72,6 +74,9 @@
     width: 100%; }
     .image.fit img {
       width: 100%; }
+    .image.fit video {
+      width: 100%;
+      height: auto; }
 
 .portrait .image {
   border-radius: 50%;

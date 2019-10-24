@@ -79,6 +79,8 @@ h3 {
     @media screen and (max-width: 736px) {
       .wrapper header {
         margin-bottom: 2em; } }
+  .wrapper.style01 p {
+    color: #bbbbbb; }
   @media screen and (max-width: 1280px) {
     .wrapper > .inner {
       width: 65em; } }
