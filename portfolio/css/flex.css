@@ -1,0 +1,172 @@
+html, body, div, span, h1, h2, h3, p, a, ul, li, img, caption, header, footer, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+body {
+  background-color: #222222;
+  color: #dddddd;
+  line-height: 1; }
+  @media screen and (max-width: 980px) {
+    body {
+      padding-top: 44px; } }
+
+body {
+  font-family: "Signika", sans-serif;
+  font-size: 11pt;
+  font-weight: 300;
+  line-height: 1.65; }
+  @media screen and (max-width: 1680px) {
+    body {
+      font-size: 11pt; } }
+  @media screen and (max-width: 980px) {
+    body {
+      font-size: 12pt; } }
+
+header, footer, section {
+  display: block; }
+
+p {
+  margin: 0 0 2em 0; }
+
+a {
+  -moz-transition: color 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+  text-decoration: none;
+  color: #dddddd; }
+
+h1, h2, h3 {
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0 0 1em 0;
+  color: #ffffff; }
+  h1 a, h2 a, h3 a {
+    color: inherit;
+    text-decoration: none; }
+  @media screen and (max-width: 736px) {
+    h1, h2, h3 {
+      font-size: 2em; } }
+  @media screen and (max-width: 480px) {
+    h1, h2, h3 {
+      font-size: 1.5em; } }
+
+h2 {
+  font-size: 2.5em; }
+
+h3 {
+  font-size: 1.75em; }
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.flex {
+  display: -ms-flexbox;
+  -ms-flex-pack: justify;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -moz-justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between; }
+  .flex.flex-1 .col {
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%; }
+    @media screen and (max-width: 1280px) {
+      .flex.flex-1 .col {
+        width: 30%; } }
+    @media screen and (max-width: 980px) {
+      .flex.flex-1 .col {
+        width: 35%; } }
+    @media screen and (max-width: 736px) {
+      .flex.flex-1 .col {
+        width: 50%; } }
+  .flex.flex-2 {
+    -moz-align-items: stretch;
+    -webkit-align-items: stretch;
+    -ms-align-items: stretch;
+    align-items: stretch; }
+    .flex.flex-2 .col {
+      width: 48%; }
+      @media screen and (max-width: 736px) {
+        .flex.flex-2 .col {
+          width: 100%; } }
+  .flex.flex-3 {
+    -moz-align-items: stretch;
+    -webkit-align-items: stretch;
+    -ms-align-items: stretch;
+    align-items: stretch; }
+    .flex.flex-3 .col {
+      width: 31%; }
+      @media screen and (max-width: 736px) {
+        .flex.flex-3 .col {
+          width: 100%; } }
+  .flex.flex-tabs {
+    -moz-flex-wrap: nowrap;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap; }
+    .flex.flex-tabs ul {
+      width: 20%; }
+      @media screen and (max-width: 980px) {
+        .flex.flex-tabs ul {
+          width: 30%; } }
+      @media screen and (max-width: 736px) {
+        .flex.flex-tabs ul {
+          width: 100%; } }
+    .flex.flex-tabs .tabs {
+      width: 77%; }
+      @media screen and (max-width: 980px) {
+        .flex.flex-tabs .tabs {
+          width: 67%; } }
+      @media screen and (max-width: 736px) {
+        .flex.flex-tabs .tabs {
+          width: 100%; } }
+    @media screen and (max-width: 980px) {
+      .flex.flex-tabs .flex-3 .col {
+        width: 48%; } }
+    @media screen and (max-width: 736px) {
+      .flex.flex-tabs .flex-3 .col {
+        width: 100%; } }
+    @media screen and (max-width: 736px) {
+      .flex.flex-tabs {
+        -moz-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
+
+ul.tab-list {
+  list-style: none;
+  margin: 0 0 1em 0;
+  padding: 0; }
+  ul.tab-list li a {
+    background: rgba(255, 255, 255, 0.075);
+    border-radius: 4px;
+    margin-bottom: 0.5em;
+    padding: 0.5em 1em;
+    display: inline-block;
+    width: 100%; }
+    ul.tab-list li a.active {
+      background: #ff00ff; }
+    ul.tab-list li a:hover {
+      background: #880088; }
+
+.tab {
+  display: none; }
+  .tab.active {
+    display: flex; }
+
+/*# sourceMappingURL=flex.css.map */

@@ -1,0 +1,125 @@
+html, body, div, span, h1, h2, h3, p, a, ul, li, img, caption, header, footer, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+body {
+  background-color: #222222;
+  color: #dddddd;
+  line-height: 1; }
+  @media screen and (max-width: 980px) {
+    body {
+      padding-top: 44px; } }
+
+body {
+  font-family: "Signika", sans-serif;
+  font-size: 11pt;
+  font-weight: 300;
+  line-height: 1.65; }
+  @media screen and (max-width: 1680px) {
+    body {
+      font-size: 11pt; } }
+  @media screen and (max-width: 980px) {
+    body {
+      font-size: 12pt; } }
+
+header, footer, section {
+  display: block; }
+
+p {
+  margin: 0 0 2em 0; }
+
+a {
+  -moz-transition: color 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+  text-decoration: none;
+  color: #dddddd; }
+
+h1, h2, h3 {
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0 0 1em 0;
+  color: #ffffff; }
+  h1 a, h2 a, h3 a {
+    color: inherit;
+    text-decoration: none; }
+  @media screen and (max-width: 736px) {
+    h1, h2, h3 {
+      font-size: 2em; } }
+  @media screen and (max-width: 480px) {
+    h1, h2, h3 {
+      font-size: 1.5em; } }
+
+h2 {
+  font-size: 2.5em; }
+
+h3 {
+  font-size: 1.75em; }
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+#header {
+  background: rgba(32, 32, 32, 0.75);
+  color: #dddddd;
+  cursor: default;
+  height: 3.25em;
+  left: 0;
+  line-height: 3.25em;
+  position: fixed;
+  text-align: right;
+  top: 0;
+  width: 100%;
+  z-index: 10001; }
+  @media screen and (max-width: 980px) {
+    #header {
+      height: 44px;
+      line-height: 44px; } }
+  @media screen and (max-width: 480px) {
+    #header {
+      min-width: 320px; } }
+  #header > h1 {
+    font-size: 2em;
+    color: #dddddd;
+    display: inline-block;
+    height: inherit;
+    left: 1.25em;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0; }
+    @media screen and (max-width: 980px) {
+      #header > h1 {
+        left: 1em; }
+        #header > h1 a {
+          font-size: 1em; } }
+  @media screen and (max-width: 980px) and (max-width: 980px) {
+    #header > h1 {
+      font-size: 1em; } }
+
+    #header > h1 span {
+      font-weight: 300;
+      font-size: 0.8em; }
+  #header > a {
+    display: inline-block;
+    padding: 0 0.75em;
+    text-decoration: none;
+    -moz-transition: color 0.2s ease-in-out;
+    -webkit-transition: color 0.2s ease-in-out;
+    -ms-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out; }
+    #header > a:hover {
+      color: #ffffff; }
+    @media screen and (max-width: 736px) {
+      #header > a {
+        padding: 0 0.5em; } }
+
+/*# sourceMappingURL=header.css.map */

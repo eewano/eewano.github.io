@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+@import "./normalize.scss";
+
+.flex {
+    display: -ms-flexbox;
+    -ms-flex-pack: justify;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+
+    &.flex-1 .col {
+        margin-left: auto;
+        margin-right: auto;
+        width: 25%;
+
+        @include mq(lg) {
+            width: 30%;
+        }
+
+        @include mq(rg) {
+            width: 35%;
+        }
+
+        @include mq(md) {
+            width: 50%;
+        }
+    }
+
+    &.flex-2 {
+        -moz-align-items: stretch;
+        -webkit-align-items: stretch;
+        -ms-align-items: stretch;
+        align-items: stretch;
+
+        .col {
+            width: 48%;
+
+            @include mq(md) {
+                width: 100%;
+            }
+        }
+    }
+
+    &.flex-3 {
+        -moz-align-items: stretch;
+        -webkit-align-items: stretch;
+        -ms-align-items: stretch;
+        align-items: stretch;
+
+        .col {
+            width: 31%;
+
+            @include mq(md) {
+                width: 100%;
+            }
+        }
+    }
+
+    &.flex-tabs {
+        -moz-flex-wrap: nowrap;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+
+        ul {
+            width: 20%;
+
+            @include mq(rg) {
+                width: 30%;
+            }
+
+            @include mq(md) {
+                width: 100%;
+            }
+        }
+
+        .tabs {
+            width: 77%;
+
+            @include mq(rg) {
+                width: 67%;
+            }
+
+            @include mq(md) {
+                width: 100%;
+            }
+        }
+
+        .flex-3 .col {
+            @include mq(rg) {
+                width: 48%
+            }
+
+            @include mq(md) {
+                width: 100%;
+            }
+        }
+
+        @include mq(md) {
+            -moz-flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+ul {
+    &.tab-list {
+        list-style: none;
+        margin: 0 0 1em 0;
+        padding: 0;
+
+        li {
+            a {
+                background: rgba(255, 255, 255, 0.075);
+                border-radius: 4px;
+                margin-bottom: 0.5em;
+                padding: 0.5em 1em;
+                display: inline-block;
+                width: 100%;
+
+                &.active {
+                    background: #ff00ff;
+                }
+
+                &:hover {
+                    background: #880088;
+                }
+            }
+        }
+    }
+}
+
+.tab {
+    display: none;
+
+    &.active {
+        display: flex;
+    }
+}

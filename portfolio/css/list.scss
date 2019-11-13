@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+ul {
+    list-style: disc;
+    margin: 0 0 2em 0;
+    padding-left: 1em;
+
+    li {
+        padding-left: 0.5em;
+    }
+
+    &.alt {
+        list-style: none;
+        padding-left: 0;
+
+        li {
+            border-top: solid 1px;
+            padding: 0.5em 0;
+            border-top-color: rgba(255, 255, 255, 0.15);
+
+            &:first-child {
+                border-top: 0;
+                padding-top: 0;
+            }
+        }
+    }
+
+    &.icons {
+        cursor: default;
+        list-style: none;
+        padding-left: 0;
+
+        li {
+            display: inline-block;
+            padding: 0 1em 0 0;
+
+            .icon:before {
+                font-size: 2em;
+            }
+        }
+    }
+}

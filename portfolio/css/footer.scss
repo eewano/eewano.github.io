@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+@import "./normalize.scss";
+
+#footer {
+    padding: 2em 0 4em 0;
+
+    > .inner {
+        margin: 0 auto;
+        width: 80em;
+
+        @include mq(lg) {
+            width: 65em;
+        }
+
+        @include mq(rg) {
+            width: 90%;
+        }
+    }
+
+    .copyright {
+        color: #777777;
+        font-size: 0.9em;
+        margin: 0 0 2em 0;
+        padding: 0;
+        text-align: center;
+
+        .icons {
+            margin: 2em 0 1em 0;
+        }
+    }
+
+    @include mq(md) {
+        padding: 3em 0 1em 0;
+    }
+}
+
+.icon {
+    text-decoration: none;
+    border-bottom: none;
+    position: relative;
+}

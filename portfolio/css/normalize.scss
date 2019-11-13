@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+$breakpoints: (
+    'sm': 'screen and (max-width: 480px)',
+    'md': 'screen and (max-width: 736px)',
+    'rg': 'screen and (max-width: 980px)',
+    'lg': 'screen and (max-width: 1280px)',
+    'xl': 'screen and (max-width: 1680px)',
+) !default;
+
+@mixin mq($breakpoint: md) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
+
+html, body, div, span, h1, h2, h3, p, a, ul, li, img, caption, header, footer, section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    background-color: #222222;
+    color: #dddddd;
+    line-height: 1;
+
+    @include mq(rg) {
+        padding-top: 44px;
+    }
+}
+
+body {
+    font-family: "Signika", sans-serif;
+    font-size: 11pt;
+    font-weight: 300;
+    line-height: 1.65;
+
+    @include mq(xl) {
+        font-size: 11pt;
+    }
+
+    @include mq(rg) {
+        font-size: 12pt;
+    }
+}
+
+header, footer, section {
+    display: block;
+}
+
+p {
+    margin: 0 0 2em 0;
+}
+
+a {
+    -moz-transition: color 0.2s ease-in-out;
+    -webkit-transition: color 0.2s ease-in-out;
+    -ms-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+    text-decoration: none;
+    color: #dddddd;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 0 0 1em 0;
+    color: #ffffff;
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    @include mq(md) {
+        font-size: 2em;
+    }
+
+    @include mq(sm) {
+        font-size: 1.5em;
+    }
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 1.75em;
+}
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}

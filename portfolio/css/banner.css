@@ -1,0 +1,154 @@
+html, body, div, span, h1, h2, h3, p, a, ul, li, img, caption, header, footer, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+body {
+  background-color: #222222;
+  color: #dddddd;
+  line-height: 1; }
+  @media screen and (max-width: 980px) {
+    body {
+      padding-top: 44px; } }
+
+body {
+  font-family: "Signika", sans-serif;
+  font-size: 11pt;
+  font-weight: 300;
+  line-height: 1.65; }
+  @media screen and (max-width: 1680px) {
+    body {
+      font-size: 11pt; } }
+  @media screen and (max-width: 980px) {
+    body {
+      font-size: 12pt; } }
+
+header, footer, section {
+  display: block; }
+
+p {
+  margin: 0 0 2em 0; }
+
+a {
+  -moz-transition: color 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+  text-decoration: none;
+  color: #dddddd; }
+
+h1, h2, h3 {
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0 0 1em 0;
+  color: #ffffff; }
+  h1 a, h2 a, h3 a {
+    color: inherit;
+    text-decoration: none; }
+  @media screen and (max-width: 736px) {
+    h1, h2, h3 {
+      font-size: 2em; } }
+  @media screen and (max-width: 480px) {
+    h1, h2, h3 {
+      font-size: 1.5em; } }
+
+h2 {
+  font-size: 2.5em; }
+
+h3 {
+  font-size: 1.75em; }
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+#banner {
+  display: -ms-flexbox;
+  -ms-flex-pack: center;
+  -ms-flex-align: center;
+  padding: 8em 0 6em 0;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  background-image: url(../img/banner_top01.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top: 0;
+  min-height: 100vh;
+  height: 100vh !important;
+  position: relative;
+  text-align: center;
+  overflow: hidden; }
+  #banner .inner {
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -moz-transition: opacity 1s ease, -moz-transform 1 ease;
+    -webkit-transition: opacity 1s ease, -webkit-transform 1 ease;
+    -ms-transition: opacity 1s ease, -ms-transform 1 ease;
+    transition: opacity 1s ease, transform 1 ease;
+    opacity: 1;
+    position: relative;
+    z-index: 2; }
+    @media screen and (max-width: 736px) {
+      #banner .inner {
+        width: 100%; } }
+  #banner h1 {
+    color: #dddddd;
+    font-size: 4em;
+    margin-bottom: 0.25em; }
+    @media screen and (max-width: 736px) {
+      #banner h1 {
+        font-size: 1.75em;
+        margin-bottom: 0.5em;
+        padding-bottom: 0; } }
+  #banner p {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 1.5em; }
+    @media screen and (max-width: 736px) {
+      #banner p {
+        font-size: 1.25em; } }
+    @media screen and (max-width: 480px) {
+      #banner p {
+        font-size: 1em; } }
+  #banner:before {
+    -moz-transition: opacity 3s ease;
+    -webkit-transition: opacity 3s ease;
+    -ms-transition: opacity 3s ease;
+    transition: opacity 3s ease;
+    -moz-transition-delay: 1.25s;
+    -webkit-transition-delay: 1.25s;
+    -ms-transition-delay: 1.25s;
+    transition-delay: 1.25s;
+    content: '';
+    display: block;
+    background-color: #000000;
+    height: 100%;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1; }
+  @media screen and (max-width: 736px) {
+    #banner {
+      min-height: 0;
+      height: auto !important;
+      padding: 4em 2em; } }
+
+/*# sourceMappingURL=banner.css.map */
