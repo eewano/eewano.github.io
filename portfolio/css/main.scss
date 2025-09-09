@@ -1,5 +1,55 @@
 @charset "UTF-8";
 
+@import "./normalize.scss";
+
+.mt_10 {
+    margin-top: 10px;
+}
+
+.mt_20 {
+    margin-top: 20px;
+}
+
+.mt_30 {
+    margin-top: 30px;
+}
+
+.mt_40 {
+    margin-top: 40px;
+}
+
+.mt_50 {
+    margin-top: 50px;
+}
+
+.mt_60 {
+    margin-top: 60px;
+}
+
+.mt_70 {
+    margin-top: 70px;
+}
+
+.mt_80 {
+    margin-top: 80px;
+}
+
+.mt_90 {
+    margin-top: 90px;
+}
+
+.mt_100 {
+    margin-top: 100px;
+}
+
+.mt_110 {
+    margin-top: 110px;
+}
+
+.mt_120 {
+    margin-top: 120px;
+}
+
 .align-center {
     text-align: center;
 }
@@ -90,6 +140,10 @@
         font-size: 1.25em;
         font-weight: 300;
         margin: 0;
+
+        @include mq(md) {
+            font-size: 1em;
+        }
     }
 }
 
@@ -118,27 +172,12 @@
 }
 
 .portrait {
-    .image {
+    .circle-gradient-border {
+        width: 100%;
+        height: auto;
         border-radius: 50%;
-        display: inline-block;
-        position: relative;
-        background: -moz-radial-gradient(ellipse farthest-side, #ff1493, #222222);
-        background: -webkit-radial-gradient(ellipse farthest-side, #ff1493, #222222);
-        background: -ms-radial-gradient(ellipse farthest-side, #ff1493, #222222);
-        background: radial-gradient(ellipse farthest-side, #ff1493, #222222);
-    
-        img {
-            display: block;
-        }
-    
-        &.fit {
-            display: block;
-            width: 100%;
-    
-            img {
-                width: 100%;
-            }
-        }
+        object-fit: cover;
+        margin: 20px auto 50px;
     }
 }
 

@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import "./normalize.scss";
+
 ul {
     list-style: disc;
     margin: 0 0 2em 0;
@@ -7,6 +9,10 @@ ul {
 
     li {
         padding-left: 0.5em;
+
+        @include mq(md) {
+            font-size: 0.9em;
+        }
     }
 
     &.alt {

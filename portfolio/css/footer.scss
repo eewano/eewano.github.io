@@ -18,25 +18,43 @@
         }
     }
 
+    h3 {
+
+        @include mq(rg) {
+            display: block;
+            height: 3em;
+        }
+
+        @include mq(md) {
+            display: inline-block;
+            height: auto;
+        }
+    }
+
+    .icon {
+        display: block;
+        width: 4%;
+        margin: 2em auto 1em;
+
+        @include mq(md) {
+            width: 7%;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
     .copyright {
         color: #777777;
         font-size: 0.9em;
         margin: 0 0 2em 0;
         padding: 0;
         text-align: center;
-
-        .icons {
-            margin: 2em 0 1em 0;
-        }
     }
 
     @include mq(md) {
         padding: 3em 0 1em 0;
     }
-}
-
-.icon {
-    text-decoration: none;
-    border-bottom: none;
-    position: relative;
 }

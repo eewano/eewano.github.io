@@ -2,11 +2,13 @@
 
 @import "./normalize.scss";
 
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');
+
 #banner {
     display: -ms-flexbox;
     -ms-flex-pack: center;
     -ms-flex-align: center;
-    padding: 8em 0 6em 0;
+    padding: 8em 2em 6em 2em;
     -moz-align-items: center;
     -webkit-align-items: center;
     -ms-align-items: center;
@@ -23,9 +25,9 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     border-top: 0;
-    min-height: 100vh;
-    height: 100vh !important;
+    height: 100vh;
     position: relative;
     text-align: center;
     overflow: hidden;
@@ -51,12 +53,12 @@
     h1 {
         color: #dddddd;
         font-size: 4em;
-        margin-bottom: 0.25em;
+        margin-bottom: 1em;
 
         @include mq(md) {
             font-size: 1.75em;
             margin-bottom: 0.5em;
-            padding-bottom: 0;
+            padding-bottom: 0.5em;
         }
     }
 
@@ -96,7 +98,7 @@
 
     @include mq(md) {
         min-height: 0;
-        height: auto !important;
+        // height: auto !important;
         padding: 4em 2em;
     }
 }
