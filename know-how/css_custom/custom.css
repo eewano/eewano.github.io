@@ -1,5 +1,6 @@
 a {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .btn-all-link {
   width: 50%;
@@ -7,12 +8,15 @@ a {
   background-color: #389bc2;
   color: #ffffff;
   text-align: center;
-  box-sizing: border-box; }
-  .btn-all-link:hover {
-    background-color: #fdb657; }
+  box-sizing: border-box;
+}
+.btn-all-link:hover {
+  background-color: #fdb657;
+}
 
 #upper-under-chara {
-  margin-top: 40px; }
+  margin-top: 40px;
+}
 
 #program-area pre {
   font-size: 16px;
@@ -20,53 +24,64 @@ a {
   background-color: #eeeeff;
   width: 50%;
   padding-top: 10px;
-  padding-bottom: 0; }
+  padding-bottom: 0;
+}
 
 #flexbox-right-area nav ul {
   background-color: #444444;
   list-style-type: none;
   display: flex;
   justify-content: flex-end;
-  margin: 0; }
-  #flexbox-right-area nav ul li a {
-    display: block;
-    text-decoration: none;
-    padding: 20px 30px; }
+  margin: 0;
+}
+#flexbox-right-area nav ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 20px 30px;
+}
 
 #big-chara-at-first p {
   margin: 0;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+}
 
 .lead::first-letter {
   float: left;
   padding: 0.05em 0.05em 0 0;
   line-height: 0.95em;
   font-size: 4.1em;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 #hover-outline a {
   color: #ea6357;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 a:hover {
-  outline: 1px solid #ea6357; }
+  outline: 1px solid #ea6357;
+}
 
 #hide-text {
-  width: 400px; }
+  width: 400px;
+}
 
 #hide-text p {
   overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis; }
+  text-overflow: ellipsis;
+}
 
 #texture-window-area {
   background: url(../img/texture01.png);
-  padding: 20px; }
-  #texture-window-area .text-area {
-    padding: 32px;
-    max-width: 400px;
-    border-radius: 12px;
-    background-color: rgba(255, 255, 255, 0.8); }
+  padding: 20px;
+}
+#texture-window-area .text-area {
+  padding: 32px;
+  max-width: 400px;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
 
 .keyvisual {
   height: 450px;
@@ -74,6 +89,5 @@ a:hover {
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover; }
-
-/*# sourceMappingURL=custom.css.map */
+  background-size: cover;
+}/*# sourceMappingURL=custom.css.map */

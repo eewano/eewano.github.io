@@ -1,94 +1,145 @@
+@charset "UTF-8";
 html, body, div, span, h1, h2, h3, p, a, ul, li, img, caption, header, footer, section {
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 body {
   background-color: #222222;
   color: #dddddd;
-  line-height: 1; }
-  @media screen and (max-width: 980px) {
-    body {
-      padding-top: 44px; } }
+  line-height: 1;
+}
+@media screen and (max-width: 980px) {
+  body {
+    padding-top: 44px;
+  }
+}
 
 body {
   font-family: "Signika", sans-serif;
   font-size: 11pt;
   font-weight: 300;
-  line-height: 1.65; }
-  @media screen and (max-width: 1680px) {
-    body {
-      font-size: 11pt; } }
-  @media screen and (max-width: 980px) {
-    body {
-      font-size: 12pt; } }
+  line-height: 1.65;
+}
+@media screen and (max-width: 1680px) {
+  body {
+    font-size: 11pt;
+  }
+}
+@media screen and (max-width: 980px) {
+  body {
+    font-size: 12pt;
+  }
+}
 
 header, footer, section {
-  display: block; }
+  display: block;
+}
 
 p {
-  margin: 0 0 2em 0; }
+  margin: 0 0 2em 0;
+}
 
 a {
-  -moz-transition: color 0.2s ease-in-out;
-  -webkit-transition: color 0.2s ease-in-out;
-  -ms-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
   text-decoration: none;
-  color: #dddddd; }
+  color: #dddddd;
+}
 
 h1, h2, h3 {
   font-weight: 700;
   line-height: 1.5;
   margin: 0 0 1em 0;
-  color: #ffffff; }
-  h1 a, h2 a, h3 a {
-    color: inherit;
-    text-decoration: none; }
-  @media screen and (max-width: 736px) {
-    h1, h2, h3 {
-      font-size: 2em; } }
-  @media screen and (max-width: 480px) {
-    h1, h2, h3 {
-      font-size: 1.5em; } }
+  color: #ffffff;
+}
+h1 a, h2 a, h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+@media screen and (max-width: 736px) {
+  h1, h2, h3 {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 480px) {
+  h1, h2, h3 {
+    font-size: 1.5em;
+  }
+}
 
 h2 {
-  font-size: 2.5em; }
+  font-size: 2.5em;
+}
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 2em;
+  }
+}
 
 h3 {
-  font-size: 1.75em; }
+  font-size: 1.75em;
+}
+@media screen and (max-width: 480px) {
+  h3 {
+    font-size: 1.5em;
+  }
+}
 
 *, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 .wrapper {
   padding: 6em 0 4em 0;
-  position: relative; }
-  .wrapper .inner {
-    margin: 0 auto;
-    width: 80em;
-    position: relative;
-    z-index: 99; }
+  position: relative;
+}
+.wrapper .inner {
+  margin: 0 auto;
+  width: 80em;
+  position: relative;
+  z-index: 99;
+}
+.wrapper header {
+  margin-bottom: 4em;
+}
+@media screen and (max-width: 736px) {
   .wrapper header {
-    margin-bottom: 4em; }
-    @media screen and (max-width: 736px) {
-      .wrapper header {
-        margin-bottom: 2em; } }
-  .wrapper.style01 p {
-    color: #bbbbbb; }
-  @media screen and (max-width: 1280px) {
-    .wrapper > .inner {
-      width: 65em; } }
-  @media screen and (max-width: 980px) {
-    .wrapper > .inner {
-      width: 90%; } }
-  @media screen and (max-width: 736px) {
-    .wrapper {
-      padding: 3em 0 1em 0; } }
+    margin-bottom: 2em;
+  }
+}
+.wrapper.style01 p {
+  color: #bbbbbb;
+}
+@media screen and (max-width: 1280px) {
+  .wrapper > .inner {
+    width: 65em;
+  }
+}
+@media screen and (max-width: 980px) {
+  .wrapper > .inner {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 736px) {
+  .wrapper {
+    padding: 3em 0 1em 0;
+  }
+}
 
-/*# sourceMappingURL=wrapper.css.map */
+/* 最初は要素を非表示にする */
+.scroll_target {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  will-change: opacity, transform; /* パフォーマンス最適化 */
+}
+
+/* スクロールで表示された時の状態 */
+.is_visible {
+  opacity: 1;
+  transform: translateY(0);
+}/*# sourceMappingURL=wrapper.css.map */

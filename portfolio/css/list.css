@@ -1,27 +1,132 @@
+html, body, div, span, h1, h2, h3, p, a, ul, li, img, caption, header, footer, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  background-color: #222222;
+  color: #dddddd;
+  line-height: 1;
+}
+@media screen and (max-width: 980px) {
+  body {
+    padding-top: 44px;
+  }
+}
+
+body {
+  font-family: "Signika", sans-serif;
+  font-size: 11pt;
+  font-weight: 300;
+  line-height: 1.65;
+}
+@media screen and (max-width: 1680px) {
+  body {
+    font-size: 11pt;
+  }
+}
+@media screen and (max-width: 980px) {
+  body {
+    font-size: 12pt;
+  }
+}
+
+header, footer, section {
+  display: block;
+}
+
+p {
+  margin: 0 0 2em 0;
+}
+
+a {
+  transition: color 0.2s ease-in-out;
+  text-decoration: none;
+  color: #dddddd;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0 0 1em 0;
+  color: #ffffff;
+}
+h1 a, h2 a, h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+@media screen and (max-width: 736px) {
+  h1, h2, h3 {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 480px) {
+  h1, h2, h3 {
+    font-size: 1.5em;
+  }
+}
+
+h2 {
+  font-size: 2.5em;
+}
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 2em;
+  }
+}
+
+h3 {
+  font-size: 1.75em;
+}
+@media screen and (max-width: 480px) {
+  h3 {
+    font-size: 1.5em;
+  }
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 ul {
   list-style: disc;
   margin: 0 0 2em 0;
-  padding-left: 1em; }
+  padding-left: 1em;
+}
+ul li {
+  padding-left: 0.5em;
+}
+@media screen and (max-width: 736px) {
   ul li {
-    padding-left: 0.5em; }
-  ul.alt {
-    list-style: none;
-    padding-left: 0; }
-    ul.alt li {
-      border-top: solid 1px;
-      padding: 0.5em 0;
-      border-top-color: rgba(255, 255, 255, 0.15); }
-      ul.alt li:first-child {
-        border-top: 0;
-        padding-top: 0; }
-  ul.icons {
-    cursor: default;
-    list-style: none;
-    padding-left: 0; }
-    ul.icons li {
-      display: inline-block;
-      padding: 0 1em 0 0; }
-      ul.icons li .icon:before {
-        font-size: 2em; }
-
-/*# sourceMappingURL=list.css.map */
+    font-size: 0.9em;
+  }
+}
+ul.alt {
+  list-style: none;
+  padding-left: 0;
+}
+ul.alt li {
+  border-top: solid 1px;
+  padding: 0.5em 0;
+  border-top-color: rgba(255, 255, 255, 0.15);
+}
+ul.alt li:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+ul.icons {
+  cursor: default;
+  list-style: none;
+  padding-left: 0;
+}
+ul.icons li {
+  display: inline-block;
+  padding: 0 1em 0 0;
+}
+ul.icons li .icon:before {
+  font-size: 2em;
+}/*# sourceMappingURL=list.css.map */

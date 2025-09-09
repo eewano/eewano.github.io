@@ -1,108 +1,258 @@
+html, body, div, span, h1, h2, h3, p, a, ul, li, img, caption, header, footer, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  background-color: #222222;
+  color: #dddddd;
+  line-height: 1;
+}
+@media screen and (max-width: 980px) {
+  body {
+    padding-top: 44px;
+  }
+}
+
+body {
+  font-family: "Signika", sans-serif;
+  font-size: 11pt;
+  font-weight: 300;
+  line-height: 1.65;
+}
+@media screen and (max-width: 1680px) {
+  body {
+    font-size: 11pt;
+  }
+}
+@media screen and (max-width: 980px) {
+  body {
+    font-size: 12pt;
+  }
+}
+
+header, footer, section {
+  display: block;
+}
+
+p {
+  margin: 0 0 2em 0;
+}
+
+a {
+  transition: color 0.2s ease-in-out;
+  text-decoration: none;
+  color: #dddddd;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0 0 1em 0;
+  color: #ffffff;
+}
+h1 a, h2 a, h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+@media screen and (max-width: 736px) {
+  h1, h2, h3 {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 480px) {
+  h1, h2, h3 {
+    font-size: 1.5em;
+  }
+}
+
+h2 {
+  font-size: 2.5em;
+}
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 2em;
+  }
+}
+
+h3 {
+  font-size: 1.75em;
+}
+@media screen and (max-width: 480px) {
+  h3 {
+    font-size: 1.5em;
+  }
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.mt_10 {
+  margin-top: 10px;
+}
+
+.mt_20 {
+  margin-top: 20px;
+}
+
+.mt_30 {
+  margin-top: 30px;
+}
+
+.mt_40 {
+  margin-top: 40px;
+}
+
+.mt_50 {
+  margin-top: 50px;
+}
+
+.mt_60 {
+  margin-top: 60px;
+}
+
+.mt_70 {
+  margin-top: 70px;
+}
+
+.mt_80 {
+  margin-top: 80px;
+}
+
+.mt_90 {
+  margin-top: 90px;
+}
+
+.mt_100 {
+  margin-top: 100px;
+}
+
+.mt_110 {
+  margin-top: 110px;
+}
+
+.mt_120 {
+  margin-top: 120px;
+}
+
 .align-center {
-  text-align: center; }
+  text-align: center;
+}
 
 .video {
   background: rgba(255, 255, 255, 0.075);
   border-radius: 4px;
   margin: 0 0 2em 0;
   overflow: hidden;
-  position: relative; }
-  .video img {
-    -moz-transition: -moz-transform 0.2s ease-in-out;
-    -webkit-transition: -webkit-transform 0.2s ease-in-out;
-    -ms-transition: -ms-transform 0.2s ease-in-out;
-    transition: transform 0.2s ease-in-out; }
-  .video:hover img {
-    -moz-transform: scale(1.075);
-    -webkit-transform: scale(1.075);
-    -ms-transform: scale(1.075);
-    transform: scale(1.075); }
-  .video:hover .image .arrow .icon_area {
-    color: #ffffff; }
-  .video .image {
-    margin: 0;
-    position: relative;
-    overflow: hidden; }
-    .video .image .arrow {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      text-align: center; }
-      .video .image .arrow .icon_area {
-        -moz-transition: color 1s ease-in-out;
-        -webkit-transition: color 1s ease-in-out;
-        -ms-transition: color 1s ease-in-out;
-        transition: color 1s ease-in-out;
-        display: inline-block;
-        vertical-align: middle;
-        color: rgba(255, 255, 255, 0.5);
-        z-index: 10002; }
+  position: relative;
+}
+.video img {
+  transition: transform 0.2s ease-in-out;
+}
+.video:hover img {
+  transform: scale(1.075);
+}
+.video:hover .image .arrow .icon_area {
+  color: #ffffff;
+}
+.video .image {
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+.video .image .arrow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.video .image .arrow .icon_area {
+  transition: color 1s ease-in-out;
+  display: inline-block;
+  vertical-align: middle;
+  color: rgba(255, 255, 255, 0.5);
+  z-index: 10002;
+}
+.video .caption {
+  color: #bbbbbb;
+  padding: 1.5em;
+  font-size: 1.25em;
+  font-weight: 300;
+  margin: 0;
+  line-height: 1.5em;
+}
+.video a:hover .caption {
+  background: #777777;
+}
+.video .link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  top: 0;
+  left: 0;
+}
+.video .link span {
+  display: none;
+}
+.video .caption {
+  padding: 1.5em;
+  font-size: 1.25em;
+  font-weight: 300;
+  margin: 0;
+}
+@media screen and (max-width: 736px) {
   .video .caption {
-    color: #bbbbbb;
-    padding: 1.5em;
-    font-size: 1.25em;
-    font-weight: 300;
-    margin: 0;
-    line-height: 1.5em; }
-  .video a:hover .caption {
-    background: #777777; }
-  .video .link {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: block;
-    top: 0;
-    left: 0; }
-    .video .link span {
-      display: none; }
-  .video .caption {
-    padding: 1.5em;
-    font-size: 1.25em;
-    font-weight: 300;
-    margin: 0; }
+    font-size: 1em;
+  }
+}
 
 .image {
   border: 0;
   display: inline-block;
-  position: relative; }
-  .image img {
-    display: block; }
-  .image.fit {
-    display: block;
-    width: 100%; }
-    .image.fit img {
-      width: 100%; }
-    .image.fit video {
-      width: 100%;
-      height: auto; }
-
-.portrait .image {
-  border-radius: 50%;
-  display: inline-block;
   position: relative;
-  background: -moz-radial-gradient(ellipse farthest-side, #ff1493, #222222);
-  background: -webkit-radial-gradient(ellipse farthest-side, #ff1493, #222222);
-  background: -ms-radial-gradient(ellipse farthest-side, #ff1493, #222222);
-  background: radial-gradient(ellipse farthest-side, #ff1493, #222222); }
-  .portrait .image img {
-    display: block; }
-  .portrait .image.fit {
-    display: block;
-    width: 100%; }
-    .portrait .image.fit img {
-      width: 100%; }
+}
+.image img {
+  display: block;
+}
+.image.fit {
+  display: block;
+  width: 100%;
+}
+.image.fit img {
+  width: 100%;
+}
+.image.fit video {
+  width: 100%;
+  height: auto;
+}
+
+.portrait .circle-gradient-border {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 20px auto 50px;
+}
 
 .icon_area {
   position: absolute;
   top: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+}
 
 .image_filter:before {
   transition: opacity 3s ease;
   transition-delay: 1.25s;
-  content: '';
+  content: "";
   display: block;
   background-color: #000000;
   height: 100%;
@@ -111,6 +261,5 @@
   position: absolute;
   top: 0;
   width: 100%;
-  z-index: 1; }
-
-/*# sourceMappingURL=main.css.map */
+  z-index: 1;
+}/*# sourceMappingURL=main.css.map */
