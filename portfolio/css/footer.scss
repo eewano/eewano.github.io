@@ -34,6 +34,7 @@
     .icon {
         display: block;
         width: 4%;
+        max-width: 48px;
         margin: 2em auto 1em;
 
         @include mq(md) {
