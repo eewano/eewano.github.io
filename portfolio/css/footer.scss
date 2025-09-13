@@ -19,7 +19,6 @@
     }
 
     h3 {
-
         @include mq(rg) {
             display: block;
             height: 3em;
@@ -28,6 +27,14 @@
         @include mq(md) {
             display: inline-block;
             height: auto;
+        }
+    }
+
+    ul {
+        li {
+            @include mq(md) {
+                font-size: 0.9em;
+            }
         }
     }
 

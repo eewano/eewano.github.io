@@ -121,6 +121,11 @@ h3 {
     height: auto;
   }
 }
+@media screen and (max-width: 736px) {
+  #footer ul li {
+    font-size: 0.9em;
+  }
+}
 #footer .icon {
   display: block;
   width: 4%;
