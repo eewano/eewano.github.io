@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html, body, div, span, h1, h2, h3, p, a, ul, li, img, caption, header, footer, section {
   margin: 0;
   padding: 0;
@@ -128,18 +127,4 @@ h3 {
   .wrapper {
     padding: 3em 0 1em 0;
   }
-}
-
-/* 最初は要素を非表示にする */
-.scroll_target {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-  will-change: opacity, transform; /* パフォーマンス最適化 */
-}
-
-/* スクロールで表示された時の状態 */
-.is_visible {
-  opacity: 1;
-  transform: translateY(0);
 }/*# sourceMappingURL=wrapper.css.map */

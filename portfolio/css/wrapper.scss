@@ -41,17 +41,3 @@
         padding: 3em 0 1em 0;
     }
 }
-
-/* 最初は要素を非表示にする */
-.scroll_target {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-    will-change: opacity, transform; /* パフォーマンス最適化 */
-}
-
-/* スクロールで表示された時の状態 */
-.is_visible {
-    opacity: 1;
-    transform: translateY(0);
-}
