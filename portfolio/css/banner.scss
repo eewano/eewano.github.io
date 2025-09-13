@@ -21,7 +21,6 @@
     -webkit-justify-content: center;
     -ms-justify-content: center;
     justify-content: center;
-    background-image: url(../img/banner_top01.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -31,6 +30,24 @@
     position: relative;
     text-align: center;
     overflow: hidden;
+
+    &.page_top {
+        background-image: url(../img/banner_top01.jpg);
+
+        @include mq(md) {
+            height: auto;
+            padding: 4em 2em;
+        }
+    }
+
+    &.page_opening {
+        background-image: url(../img/banner_top08.jpg);
+
+        @include mq(md) {
+            min-height: 0;
+            padding: 4em 2em;
+        }
+    }
 
     .inner {
         -moz-transform: scale(1.0);
@@ -94,11 +111,5 @@
         top: 0;
         width: 100%;
         z-index: 1;
-    }
-
-    @include mq(md) {
-        min-height: 0;
-        // height: auto !important;
-        padding: 4em 2em;
     }
 }

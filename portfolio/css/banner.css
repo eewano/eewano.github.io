@@ -107,7 +107,6 @@ h3 {
   -moz-justify-content: center;
   -ms-justify-content: center;
   justify-content: center;
-  background-image: url(../img/banner_top01.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -117,6 +116,24 @@ h3 {
   position: relative;
   text-align: center;
   overflow: hidden;
+}
+#banner.page_top {
+  background-image: url(../img/banner_top01.jpg);
+}
+@media screen and (max-width: 736px) {
+  #banner.page_top {
+    height: auto;
+    padding: 4em 2em;
+  }
+}
+#banner.page_opening {
+  background-image: url(../img/banner_top08.jpg);
+}
+@media screen and (max-width: 736px) {
+  #banner.page_opening {
+    min-height: 0;
+    padding: 4em 2em;
+  }
 }
 #banner .inner {
   transform: scale(1);
@@ -169,10 +186,4 @@ h3 {
   top: 0;
   width: 100%;
   z-index: 1;
-}
-@media screen and (max-width: 736px) {
-  #banner {
-    min-height: 0;
-    padding: 4em 2em;
-  }
 }/*# sourceMappingURL=banner.css.map */
