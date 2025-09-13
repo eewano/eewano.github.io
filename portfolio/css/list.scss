@@ -9,10 +9,6 @@ ul {
 
     li {
         padding-left: 0.5em;
-
-        @include mq(md) {
-            font-size: 0.9em;
-        }
     }
 
     &.alt {
