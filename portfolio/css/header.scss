@@ -13,16 +13,7 @@
     text-align: right;
     top: 0;
     width: 100%;
-    z-index: 10001;
-
-    @include mq(rg) {
-        height: 44px;
-        line-height: 44px;
-    }
-
-    @include mq(sm) {
-        min-width: 320px;
-    }
+    z-index: 8000;
 
     > h1 {
         font-size: 2em;
@@ -70,5 +61,14 @@
         @include mq(md) {
             padding: 0 0.5em;
         }
+    }
+
+    @include mq(rg) {
+        height: 44px;
+        line-height: 44px;
+    }
+
+    @include mq(sm) {
+        min-width: 320px;
     }
 }
