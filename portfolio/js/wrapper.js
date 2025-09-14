@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const options = {
         root: null, // ビューポートをルートとして設定
         rootMargin: '0px',
-        threshold: 0.5 // 要素の50%が見えたら発火
+        threshold: 0.3 // 要素の30%が見えたら発火
     };
 
     // Intersection Observerのインスタンスを作成
