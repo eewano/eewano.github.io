@@ -9,21 +9,13 @@ html, body, div, span, h1, h2, h3, p, a, ul, li, img, caption, header, footer, s
 }
 
 body {
-  background-color: #222222;
-  color: #dddddd;
-  line-height: 1;
-}
-@media screen and (max-width: 980px) {
-  body {
-    padding-top: 44px;
-  }
-}
-
-body {
   font-family: "Signika", sans-serif;
   font-size: 11pt;
   font-weight: 300;
   line-height: 1.65;
+  background-color: #222222;
+  color: #dddddd;
+  line-height: 1;
 }
 @media screen and (max-width: 1680px) {
   body {
@@ -33,6 +25,7 @@ body {
 @media screen and (max-width: 980px) {
   body {
     font-size: 12pt;
+    padding-top: 44px;
   }
 }
 
@@ -230,24 +223,33 @@ h3 {
   bottom: 0;
   width: 100vw;
   height: 100vh;
-}
-#overlay.overlay_fadein {
   background: #000;
   opacity: 1;
   z-index: 9000;
-  pointer-events: none; /* クリックを透過させる場合 */
 }
-#overlay.overlay_fadeout {
-  background: #000;
-  opacity: 0;
-  z-index: 9000;
-  pointer-events: none; /* クリックを透過させる場合 */
-}
-#overlay.opa_3 {
-  transition: opacity 3s ease;
+#overlay.opa_2 {
+  transition: opacity 2s ease;
 }
 #overlay.opa_5 {
   transition: opacity 5s ease;
+}
+
+#page_transition {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 9100;
+  transition: opacity 1s ease-in-out; /* 2秒かけてopacityを変化させる */
+  /* フェードアウト時にクラスを追加し、オーバーレイを不透明にする */
+}
+#page_transition.is_fade_visible {
+  opacity: 1;
+  visibility: visible;
 }
 
 /* スクロール表示対象ブロック（最初は要素を非表示にする） */
