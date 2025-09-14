@@ -1,15 +1,19 @@
 @charset "UTF-8";
 
+@use "sass:map";
+
 $breakpoints: (
     'sm': 'screen and (max-width: 480px)',
     'md': 'screen and (max-width: 736px)',
     'rg': 'screen and (max-width: 980px)',
     'lg': 'screen and (max-width: 1280px)',
     'xl': 'screen and (max-width: 1680px)',
+    'md_upper': 'screen and (min-width: 737px)',
+    'lg_upper': 'screen and (min-width: 1281px)',
 ) !default;
 
 @mixin mq($breakpoint: md) {
-    @media #{map-get($breakpoints, $breakpoint)} {
+    @media #{map.get($breakpoints, $breakpoint)} {
         @content;
     }
 }
@@ -32,11 +36,11 @@ body {
     color: #dddddd;
     line-height: 1;
 
-    @include mq(xl) {
+    @include normalize.mq(xl) {
         font-size: 11pt;
     }
 
-    @include mq(rg) {
+    @include normalize.mq(rg) {
         font-size: 12pt;
         padding-top: 44px;
     }
@@ -70,11 +74,11 @@ h1, h2, h3 {
         text-decoration: none;
     }
 
-    @include mq(md) {
+    @include normalize.mq(md) {
         font-size: 2em;
     }
 
-    @include mq(sm) {
+    @include normalize.mq(sm) {
         font-size: 1.5em;
     }
 }
@@ -82,7 +86,7 @@ h1, h2, h3 {
 h2 {
     font-size: 2.5em;
 
-    @include mq(sm) {
+    @include normalize.mq(sm) {
         font-size: 2em;
     }
 }
@@ -90,7 +94,7 @@ h2 {
 h3 {
     font-size: 1.75em;
 
-    @include mq(sm) {
+    @include normalize.mq(sm) {
         font-size: 1.5em;
     }
 }

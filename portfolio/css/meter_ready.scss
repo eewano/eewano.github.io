@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+@use "./normalize.scss";
+
+.progress_bar_container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+
+    @include normalize.mq(md) {
+        margin-top: 40px;
+    }
+}
+  
+.progress_bar {
+    width: 85%;
+    height: 40px;
+    background-color: #444444; /* バーの背景色 */
+    border-radius: 5px;
+    overflow: hidden; /* メーターがはみ出さないようにする */
+    position: relative;
+    border: 1px solid #ccc;
+    flex-grow: 1; /* コンテナ内で幅をいっぱいにする */
+
+    @include normalize.mq(md) {
+        width: 80%;
+        height: 20px;
+    }
+}
+  
+.progress_fill {
+    height: 100%;
+    background-color: #B22222; /* メーターの色 */
+    width: 0%; /* 初期状態は0% */
+    transition: width 3s linear; /* 3秒かけて滑らかに変化させる */
+    animation: fill-animation 3s linear forwards; /* アニメーション適用 */
+
+    &.wave_gradient {
+        background: linear-gradient(
+            to right,
+            #B22222 0%,    /* 赤の開始色 */
+            #B33333 50%,   /* シアンの波打つ部分 */
+            #411111 100%   /* 赤の終了色 */
+        );
+        background-size: 200% 100%; /* グラデーションのサイズを2倍に広げる */
+        
+        /* アニメーション設定 */
+        animation: wave-gradient 3s infinite alternate; /* 3秒かけて往復アニメーションを繰り返す */
+        /* @keyframesでアニメーションの動きを定義 */
+        @keyframes wave-gradient {
+            from {
+                background-position: 0% 50%; /* 左端から開始 */
+            }
+            to {
+                background-position: 100% 50%; /* 右端まで移動 */
+            }
+        }
+    }
+}
+  
+@keyframes fill-animation {
+    from { width: 0%; }
+    to { width: 100%; }
+}
+  
+.progress_text {
+    width: 10%;
+    font-size: 24px;
+    margin-left: 10px; /* バーとテキストとの間隔 */
+    font-family: monospace;
+
+    @include normalize.mq(md) {
+        width: 15%;
+        font-size: 16px;
+    }
+}
