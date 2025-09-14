@@ -18,21 +18,23 @@
     -ms-justify-content: space-between;
     justify-content: space-between;
 
-    &.flex-1 .col {
-        margin-left: auto;
-        margin-right: auto;
-        width: 25%;
+    &.flex-1 {
+        .col {
+            margin-left: auto;
+            margin-right: auto;
+            width: 25%;
 
-        @include mq(lg) {
-            width: 30%;
-        }
+            @include mq(lg) {
+                width: 30%;
+            }
 
-        @include mq(rg) {
-            width: 35%;
-        }
+            @include mq(rg) {
+                width: 35%;
+            }
 
-        @include mq(md) {
-            width: 50%;
+            @include mq(md) {
+                width: 50%;
+            }
         }
     }
 
