@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import "./normalize.scss";
+@use "./normalize.scss";
 
 #footer {
     padding: 2em 0 4em 0;
@@ -9,22 +9,22 @@
         margin: 0 auto;
         width: 80em;
 
-        @include mq(lg) {
+        @include normalize.mq(lg) {
             width: 65em;
         }
 
-        @include mq(rg) {
+        @include normalize.mq(rg) {
             width: 90%;
         }
     }
 
     h3 {
-        @include mq(rg) {
+        @include normalize.mq(rg) {
             display: block;
             height: 3em;
         }
 
-        @include mq(md) {
+        @include normalize.mq(md) {
             display: inline-block;
             height: auto;
         }
@@ -32,7 +32,7 @@
 
     ul {
         li {
-            @include mq(md) {
+            @include normalize.mq(md) {
                 font-size: 0.9em;
             }
         }
@@ -44,7 +44,7 @@
         max-width: 48px;
         margin: 2em auto 1em;
 
-        @include mq(md) {
+        @include normalize.mq(md) {
             width: 7%;
         }
 
@@ -62,7 +62,7 @@
         text-align: center;
     }
 
-    @include mq(md) {
+    @include normalize.mq(md) {
         padding: 3em 0 1em 0;
     }
 }

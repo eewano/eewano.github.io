@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import "./normalize.scss";
+@use "./normalize.scss";
 
 #header {
     background: rgba(32, 32, 32, 0.75);
@@ -27,14 +27,14 @@
         position: absolute;
         top: 0;
 
-        @include mq(rg) {
+        @include normalize.mq(rg) {
             left: 1em;
 
             a {
                 font-size: 1em;
             }
 
-            @include mq(rg) {
+            @include normalize.mq(rg) {
                 font-size: 1em;
             }
         }
@@ -58,17 +58,17 @@
             color: #ffffff;
         }
 
-        @include mq(md) {
+        @include normalize.mq(md) {
             padding: 0 0.5em;
         }
     }
 
-    @include mq(rg) {
+    @include normalize.mq(rg) {
         height: 44px;
         line-height: 44px;
     }
 
-    @include mq(sm) {
+    @include normalize.mq(sm) {
         min-width: 320px;
     }
 }

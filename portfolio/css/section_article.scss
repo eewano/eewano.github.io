@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import "./normalize.scss";
+@use "./normalize.scss";
 
 header {
     p {
@@ -13,7 +13,7 @@ header {
         font-size: 1.25em;
         margin-top: 1em;
 
-        @include mq(md) {
+        @include normalize.mq(md) {
             font-size: 1em;
         }
     }

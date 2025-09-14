@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import "./normalize.scss";
+@use "./normalize.scss";
 
 .flex {
     display: -ms-flexbox;
@@ -24,15 +24,15 @@
             margin-right: auto;
             width: 25%;
 
-            @include mq(lg) {
+            @include normalize.mq(lg) {
                 width: 30%;
             }
 
-            @include mq(rg) {
+            @include normalize.mq(rg) {
                 width: 35%;
             }
 
-            @include mq(md) {
+            @include normalize.mq(md) {
                 width: 50%;
             }
         }
@@ -47,7 +47,7 @@
         .col {
             width: 48%;
 
-            @include mq(md) {
+            @include normalize.mq(md) {
                 width: 100%;
             }
         }
@@ -62,7 +62,7 @@
         .col {
             width: 31%;
 
-            @include mq(md) {
+            @include normalize.mq(md) {
                 width: 100%;
                 margin-bottom: 4em;
             }
@@ -78,11 +78,11 @@
         ul {
             width: 20%;
 
-            @include mq(rg) {
+            @include normalize.mq(rg) {
                 width: 30%;
             }
 
-            @include mq(md) {
+            @include normalize.mq(md) {
                 width: 100%;
             }
         }
@@ -90,26 +90,26 @@
         .tabs {
             width: 77%;
 
-            @include mq(rg) {
+            @include normalize.mq(rg) {
                 width: 67%;
             }
 
-            @include mq(md) {
+            @include normalize.mq(md) {
                 width: 100%;
             }
         }
 
         .flex-3 .col {
-            @include mq(rg) {
+            @include normalize.mq(rg) {
                 width: 48%
             }
 
-            @include mq(md) {
+            @include normalize.mq(md) {
                 width: 100%;
             }
         }
 
-        @include mq(md) {
+        @include normalize.mq(md) {
             -moz-flex-wrap: wrap;
             -webkit-flex-wrap: wrap;
             -ms-flex-wrap: wrap;

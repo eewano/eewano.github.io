@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import "./normalize.scss";
+@use "./normalize.scss";
 
 ul {
     list-style: disc;

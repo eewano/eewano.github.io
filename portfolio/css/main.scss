@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import "./normalize.scss";
+@use "./normalize.scss";
 
 $max_margin_values: 16;
 $spacing_values: 10;
@@ -159,7 +159,7 @@ $spacing_values: 10;
         font-weight: 300;
         margin: 0;
 
-        @include mq(md) {
+        @include normalize.mq(md) {
             font-size: 1em;
         }
     }

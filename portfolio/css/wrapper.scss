@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import "./normalize.scss";
+@use "./normalize.scss";
 
 .wrapper {
     padding: 6em 0 4em 0;
@@ -16,7 +16,7 @@
     header {
         margin-bottom: 4em;
 
-        @include mq(md) {
+        @include normalize.mq(md) {
             margin-bottom: 2em;
         }
     }
@@ -28,16 +28,16 @@
     }
 
     > .inner {
-        @include mq(lg) {
+        @include normalize.mq(lg) {
             width: 65em;
         }
 
-        @include mq(rg) {
+        @include normalize.mq(rg) {
             width: 90%;
         }
     }
 
-    @include mq(md) {
+    @include normalize.mq(md) {
         padding: 3em 0 1em 0;
     }
 }
