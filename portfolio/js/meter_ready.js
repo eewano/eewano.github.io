@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const progressText = document.querySelector('.progress_text');
   
     let currentProgress = 0;
-    const totalTime = 1800; // 3秒 (ミリ秒)
+    const totalTime = 2200; // 3秒 (ミリ秒)
     const updateInterval = 10; // 30ミリ秒ごとに更新
   
     // メーターのアニメーションを遅延させて開始
