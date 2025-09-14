@@ -126,6 +126,7 @@ h3 {
   #banner.page_opening {
     min-height: 0;
     padding: 4em 2em;
+    top: -44px;
   }
 }
 #banner .inner {
