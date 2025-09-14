@@ -2,52 +2,62 @@
 
 @import "./normalize.scss";
 
-.mt_10 {
-    margin-top: 10px;
+$max_margin_values: 16;
+$spacing_values: 10;
+
+/* m*_10 ～ m*_#{$max_margin_values * $spacing_values}までのクラス名と、それに準じたmarginのpxを自動生成 */
+@for $i from 1 through $max_margin_values {
+    $value: $i * $spacing_values;
+    .mt_#{$value} {
+        margin-top: #{$value}px!important;
+    }
+
+    .mb_#{$value} {
+        margin-bottom: #{$value}px!important;
+    }
 }
 
-.mt_20 {
-    margin-top: 20px;
+#overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    width: 100vw;
+    height: 100vh;
+
+    &.overlay_fadein {
+        background: #000;
+        opacity: 1;
+        z-index: 9000;
+        pointer-events: none; /* クリックを透過させる場合 */
+    }
+
+    &.overlay_fadeout {
+        background: #000;
+        opacity: 0;
+        z-index: 9000;
+        pointer-events: none; /* クリックを透過させる場合 */
+    }
+
+    &.opa_3 {
+        transition: opacity 3.0s ease;
+    }
+
+    &.opa_5 {
+        transition: opacity 5.0s ease;
+    }
 }
 
-.mt_30 {
-    margin-top: 30px;
+/* スクロール表示対象ブロック（最初は要素を非表示にする） */
+.scroll_target {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    will-change: opacity, transform; /* パフォーマンスの最適化 */
 }
 
-.mt_40 {
-    margin-top: 40px;
-}
-
-.mt_50 {
-    margin-top: 50px;
-}
-
-.mt_60 {
-    margin-top: 60px;
-}
-
-.mt_70 {
-    margin-top: 70px;
-}
-
-.mt_80 {
-    margin-top: 80px;
-}
-
-.mt_90 {
-    margin-top: 90px;
-}
-
-.mt_100 {
-    margin-top: 100px;
-}
-
-.mt_110 {
-    margin-top: 110px;
-}
-
-.mt_120 {
-    margin-top: 120px;
+/* 表示位置までスクロールされたらブロックを表示する */
+.is_visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .align-center {
