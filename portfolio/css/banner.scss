@@ -82,6 +82,7 @@
     p {
         color: rgba(255, 255, 255, 0.65);
         font-size: 1.5em;
+        line-height: 2em;
 
         @include mq(md) {
             font-size: 1.25em;
