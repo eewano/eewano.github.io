@@ -24,20 +24,13 @@ html, body, div, span, h1, h2, h3, p, a, ul, li, img, caption, header, footer, s
 }
 
 body {
-    background-color: #222222;
-    color: #dddddd;
-    line-height: 1;
-
-    @include mq(rg) {
-        padding-top: 44px;
-    }
-}
-
-body {
     font-family: "Signika", sans-serif;
     font-size: 11pt;
     font-weight: 300;
     line-height: 1.65;
+    background-color: #222222;
+    color: #dddddd;
+    line-height: 1;
 
     @include mq(xl) {
         font-size: 11pt;
@@ -45,6 +38,7 @@ body {
 
     @include mq(rg) {
         font-size: 12pt;
+        padding-top: 44px;
     }
 }
 

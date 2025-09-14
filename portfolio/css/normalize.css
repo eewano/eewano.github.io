@@ -8,21 +8,13 @@ html, body, div, span, h1, h2, h3, p, a, ul, li, img, caption, header, footer, s
 }
 
 body {
-  background-color: #222222;
-  color: #dddddd;
-  line-height: 1;
-}
-@media screen and (max-width: 980px) {
-  body {
-    padding-top: 44px;
-  }
-}
-
-body {
   font-family: "Signika", sans-serif;
   font-size: 11pt;
   font-weight: 300;
   line-height: 1.65;
+  background-color: #222222;
+  color: #dddddd;
+  line-height: 1;
 }
 @media screen and (max-width: 1680px) {
   body {
@@ -32,6 +24,7 @@ body {
 @media screen and (max-width: 980px) {
   body {
     font-size: 12pt;
+    padding-top: 44px;
   }
 }
 
